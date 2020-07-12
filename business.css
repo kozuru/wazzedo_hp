@@ -901,11 +901,10 @@ ntainer .card .face.face1 .content{
 }
 
 .slider img {
-  width: 700px;
+width: 700px;
   height: 380px;
   object-fit: cover;
   border:4px solid cyan;
-
 }
 
 .slider nav {
@@ -918,7 +917,7 @@ ntainer .card .face.face1 .content{
   list-style: none;
   display: flex;
   padding: 0;
-  margin-left:185px;
+  margin-left:200px;
 }
  nav  ul li {
   cursor: pointer;
@@ -1284,17 +1283,28 @@ ntainer .card .face.face1 .content{
   clear:both;
 }
 .business-profile{
-  height:1800px;
+  height:1830px;
 }
 .business-contents{
-  transform:scale(0.5);
-  height:1450px;
+  transform:scale(0.65);
+  height:1520px;
 }
 nav   ul {
-  margin-left:-146px;
+  margin-left:-135px;
+  transform:scale(0.73);
 }
 .slider img{
-    transform:scale(0.55);
+  transform:scale(0.49);
+}
+.business-contents .container h1{
+  white-space:nowrap;
+}
+.business-contents .container h5{
+  padding-top:0px;
+  margin-bottom:-70px;
+}
+.click h2{
+  margin-top:-70px;
 }
 .example0001 table{
   margin-left:-290px;
