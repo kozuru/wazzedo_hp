@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="keywords" content="ワッゼド,３ＤＣＡＤ,ペンライト,医療機器,ＱＭＳ,ＡＰＰ,商品開発,マイコン,ピアッサー,ＰＩＣ，ＡＶＲ，スマホアプリ" />
+  <meta name="description" content="株式会社ワッゼドは、中小零細企業の味方です。企画立案から量産までお手伝いします。" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>お問い合わせ｜株式会社ワッゼド</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+  <link rel="shortcut icon" href="2679699_fav.ico">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+
+  <link rel="stylesheet" type="text/css" href="contact.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
+</head>
+<!-- ホーム作成　-->
+<body>
+   <div id="page_top"><a href="#"></a></div>
+    <!--header-->
+  <header>
+    <div class="header-left">
+       <ul>
+        <li><img class="logo" src="https://i.imgur.com/gm35ODF.jpg"></li>
+        <li><p>皆様に感動と楽しい時間をご提供します</p></li>
+        <li> <div class="rotate" id="rotateY">
+           <figure class="front"></figure>
+           <figure class="back"></figure>
+         </div></li>
+       </ul>
+
+    </div>
+     <!--drop-menu&responsive-hamburger-menu-->
+    <div class="header-right">
+       <input class="menu-btn" type="checkbox" id="menu-btn" />
+       <label class="menu-icon" for="menu-btn"><span class="navicon"><p>メニュー</p></span></label>
+        <ul class="menu">
+          <li><a id="btn1" href="index.html">HOME</a></li>
+          <li><a id="btn2" href="company.html">COMPANY</a></li>
+          <li><a href="business.html">BUSINESS</a>
+            <ul>
+                <li><a href="swing.html">ペンライト(文字)</a></li>
+                <!--<li><a href="color.html">ペンライト（カラー）</a></li>-->
+                <li><a href="sound.html">ペンライト（音）</a></li>
+                <li><a href="led.html">ペンライト（発色）</a></li>
+                <li><a href="others.html">ペンライト（番外）</a></li>
+            </ul>
+          </li>
+          <li><a id="btn3" href="contact.html">CONTACT</a></li>
+        </ul>
+    </div>
+  </header>
+  <div class="main">
+    <div class="contact-form container">
+      <!-- 左カラム -->
+      <!-- <div class="contact-title">
+         <h2>お問い合わせ</h2>
+         <p>contact us</p>
+         <div class="select-item">
+           <ul>
+              <li><a href="#">鹿児島の魅力</a></li>
+              <li><a href="#">ピアッサー”DREAM　TOUCH”の情報</a></li>
+           </ul>
+         </div>
+       </div>-->
+        <!--右カラム -->
+       <div class="contact-container">
+          <h3>メールでのお問い合わせ</h3>
+          <p>hkozuru@outlook.jp<span>まで送信下さい。</span><p>
+          <p>mark-meizan204@docomo.ne.jp<span>まで送信下さい。</span><p>
+          <p>h-kozuru@live.jp<span>まで送信下さい。</span><p>
+          <h3>フォームでのお問い合わせ</h3>
+          <h4>お問い合わせ<span>★必ずご入力下さい</span></h4>
+          <form action="send.php" method="post">
+          <p>名前★</p>
+          <table>
+            <tr><th>姓★</th><th>名★</th></tr>
+            <tr><td><input type="text" name="name1" required></td><td><input type="text"  name="name2" required></td></tr>
+          </table>
+          <p>ふりがな★</p>
+          <table>
+            <tr><th>姓★</th><th>名★</th></tr>
+            <tr><td><input type="text" required placeholder="ひらがな"></td><td><input type="text" required placeholder="ひらがな"></td></tr>
+          </table>
+          <p>お問い合わせ項目★</p>
+          <select  name="select">
+            <option value="未選択">選択ください</option>
+            <option value="select1">商品企画開発について</option>
+            <option value="secect2">3DCADについて</option>
+            <option value="select3">QMS構築及び医療機器申請について</option>
+            <option value="select4">コストダウンについて</option>
+            <option value="select5">ホームページ作成について</option>
+          </select>
+          <p>会社名★</p>
+          <input type="text" name="company-name" required>
+          <p>メールアドレス★</p>
+          <input type="e-mail" name="mail" required>
+          <p>電話番号</p>
+          <input type="tel" name="tel"  pattern="(?=.*?[\u3041-\u309F])[\u3041-\u309F\s]*" >
+          <p>住所</p>
+          <input type="text" name="address">
+          <p>お問い合わせ種別★</p>
+          <label><input id="item1" type="radio" name="gender1" required>商談希望</label>
+          <label><input id="item2" type="radio" name="gender2" required>見積依頼</label>
+          <p>お問い合わせ内容★</p>
+          <textarea type="text" name="body" required></textarea>
+          <p>添付ファイル</p>
+          <input type="file" name="file">
+          <div class="submit">
+            <p><input type="submit" value="送信"></p>
+          </div>
+
+          </form>
+
+        </div>
+        <div class="clear">        </div>
+    </div>
+  </div>
+  <footer>
+    <div class="footer-left">
+      <p>〒892-0821　鹿児島市名山町9-15 Mark MEIZAN 204<br>
+         ℡　080-8396-9010　　✉hkozuru2236@outlook.jp
+      </p>
+    </div>
+    <div class="footer-right">
+      <a href="company.html">アクセスマップ</a><span><a href="#">お問い合わせ</a></span>　
+      <small>Copyright(c)2020 wazzedo Co,.Ltd.　All rights reserved.</small>
+    </div>
+  </footer>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
