@@ -560,8 +560,8 @@ nav ul li img {
   /*background-color:rgba(0,0,0,0.6);*/
 }
 #slideshow{
-  height: 310px;
-  width: 540px;
+  height: 325px;
+  width: 555px;
   transition: background-image 2.5S ease;
   background-image: url("https://i.imgur.com/GuhCFBm.jpg");
   background-size:cover;
@@ -917,7 +917,7 @@ width: 700px;
   list-style: none;
   display: flex;
   padding: 0;
-  margin-left:200px;
+  margin-left:225px;
 }
  nav  ul li {
   cursor: pointer;
@@ -1283,18 +1283,18 @@ width: 700px;
   clear:both;
 }
 .business-profile{
-  height:1860px;
+  height:1980px;
 }
 .business-contents{
-  transform:scale(0.70);
-  height:1520px;
+  transform:scale(0.82);
+  height:1680px;
 }
 nav   ul {
-  margin-left:-135px;
-  transform:scale(0.69;
+  margin-left:-110px;
+  transform:scale(0.6);
 }
 .slider img{
-  transform:scale(0.45);
+  transform:scale(0.44);
 }
 .business-contents .container h1{
   white-space:nowrap;
@@ -1332,7 +1332,7 @@ header{
   margin-bottom:-10px;
 }
 .card{
-  margin-left:5px;
+  margin-left:15px;
 }
 footer{
    transform:scale(0.9);
@@ -1341,7 +1341,7 @@ footer{
   height:200px;
 }
 #slideshow{
-   transform:scale(0.55);
+   transform:scale(0.555);
    margin-top:-25px;
    margin-left:-210px;
    margin-bottom:-20px;
