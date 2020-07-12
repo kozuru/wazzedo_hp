@@ -1283,18 +1283,18 @@ width: 700px;
   clear:both;
 }
 .business-profile{
-  height:1830px;
+  height:1860px;
 }
 .business-contents{
-  transform:scale(0.65);
+  transform:scale(0.70);
   height:1520px;
 }
 nav   ul {
   margin-left:-135px;
-  transform:scale(0.73);
+  transform:scale(0.69;
 }
 .slider img{
-  transform:scale(0.49);
+  transform:scale(0.45);
 }
 .business-contents .container h1{
   white-space:nowrap;
@@ -1367,7 +1367,9 @@ footer{
   padding-left:60px;
   font-size:12px;
 }
-
+.animato .piassa p{
+  font-size:16px;
+}
 }
 @media(max-width:670px){
   .box-range-slider {
