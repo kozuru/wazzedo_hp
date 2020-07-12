@@ -1,4 +1,4 @@
-*company*/
+/*company*/
 $(document).ready(function () {
   var image = $(".slide img");
 
