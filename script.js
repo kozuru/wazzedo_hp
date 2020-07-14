@@ -76,3 +76,18 @@ function slideimage(){
 }
 
 setInterval("slideimage()",3000);
+
+/*ピアッサーmodal js*/
+$(document).ready(function() { 
+ $('.modal-open, .modal-close').on("click", function() {
+  $('.modal').fadeToggle();
+   return false;
+ });
+});
+/*ペンライトmodal js*/
+$(document).ready(function() { 
+ $('.modal-open_1, .modal-close_1').on("click", function() {
+  $('.modal_1').fadeToggle();
+   return false;
+ });
+});
