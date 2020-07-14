@@ -914,7 +914,7 @@ width: 700px;
   list-style: none;
   display: flex;
   padding: 0;
-  margin-left:235px;
+  margin-left:205px;
 }
  nav  ul li {
   cursor: pointer;
@@ -1114,7 +1114,7 @@ width: 700px;
   position:relative;
   width:800px;
   height:450px;
-  margin-left:148px;
+  margin-left:118px;
   cursor:pointer;
   /*background-image:url("https://i.imgur.com/NqyrvLg.gif");*/
   /*background-image:url("https://i.imgur.com/NFN5AFd.gif");*/
