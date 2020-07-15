@@ -1378,7 +1378,8 @@ header{
 }
 footer{
   float:none;
-  transform:scale(0.91);
+  transform:scale(0.9);
+  margin-left:-15px;
 }
 footer .footer-right{
   transform:scale(0.85);
