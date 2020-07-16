@@ -94,7 +94,7 @@ $(document).ready(function() {
 
 /*トップへ戻る*/
 $(function(){
-  var pagetop = $('#page_top');
+  var pagetop = $('#pagetop');
   // ボタン非表示
   pagetop.hide();
 
