@@ -46,6 +46,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: #fff;
+  opacity:0.9;
   text-align: center;
   width: 100vw;
   font-weight: 700;
@@ -54,7 +55,7 @@ body {
 }
 
 #fly-in {
-  font-size: 4em;
+  font-size: 3.5em;
   margin: 40vh auto;
   height: 20vh;
   text-transform: uppercase;
@@ -65,21 +66,7 @@ body {
   font-size: .4em;
   opacity: .8;
 }
-@media(max-width:670px){
-  #fly-in {
-    text-align:center;
-  font-size: 3em;
-  margin: 40vh auto;
-  height: 15vh;
-  text-transform: uppercase;
-}
 
-#fly-in span {
-  display: block;
-  font-size: .4em;
-  opacity: .8;
-}
-}
 
 #fly-in div {
  position: fixed; <!--codepen.io/h-kod/-->
@@ -120,7 +107,7 @@ top: 0;
 left: 0;
 width: 100vw;
 height: 100vh;
-background-image: linear-gradient(to top, rgba(255,8,68,0.8) 0%, rgba(255,177,153,0.7) 100%);
+background-image: linear-gradient(to top, rgba(255,8,68,0.6) 0%, rgba(255,177,153,0.5) 100%);
 }
 .cp_fullscreenmenu .menu label {
 position: absolute;
@@ -258,4 +245,25 @@ content: '';
 }
 ul .sub-menu li{
   font-size:11px;
+}
+
+@media(max-width:670px){
+ /*#fly-in {
+    text-align:center;
+  font-size: 3em;
+  margin: 40vh auto;
+  height: 15vh;
+  text-transform: uppercase;
+}
+
+#fly-in span {
+  display: block;
+  font-size: .4em;
+  opacity: .8;
+}
+*/
+#fly-in{
+  transform:scale(0.53);
+  text-align:center;
+}
 }
