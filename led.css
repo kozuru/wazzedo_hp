@@ -6,6 +6,7 @@ body {
   min-width: 980px;
   height:260px;
   padding: 10px 10px 250px 0;
+   background-color: #000;
 }
 h1 {
   font-family: 'Rubik', sans-serif;
@@ -19,12 +20,12 @@ h1 {
   text-align: center;
 }
 .body img{
-  margin-top:-95.6px;
-  margin-left:48.06%;
+  margin-top:-49.8px;
+  margin-left:48.45%;
 }
 .body-logo img{
   position:absolute;
-  top:292.5px;
+  top:270.5px;
   left:49.55%;
 }
 /* LIGHT BAR ESSENTIALS */
@@ -55,9 +56,9 @@ h1 {
   position: relative;
   top:0;
   left:0.7%;
-  width: 44.5px;
-  height: 23.9px;
-  padding: 9px 0  6px 0;
+  width: 34.3px;
+  height: 16.5px;
+  padding: 1px 0  12px 0;
   margin-right:-8px;
   background-color: #000;
 
@@ -105,8 +106,8 @@ h1 {
   box-shadow: 0px 0px 3px  #222;
   border-radius: 50%;
   margin: 0px -5px 0 0px;
-  width: 6px;
-  height: 12px;
+  width: 5px;
+  height: 8px;
   z-index: 2;
   background: linear-gradient(155deg, rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0.14) 25%, rgba(0, 0, 0, 0.18) 49%, rgba(0, 0, 0, 0) 78%, rgba(0, 0, 0, 0.8) 100%);
 }
@@ -1171,13 +1172,13 @@ h1 {
 .meteor.light{
   transform:rotate(90deg);
   position: relative;
-  top:2.3px;
-  left:-2.05%;
-  width: 46.8px;
-  height: 27.5px;
-  padding: 20px 0  0px 0;
-  margin-right:-11px;
-  background-color: #000;
+  top:4px;
+  left:-2.55%;
+  width: 38.3px;
+  height: 25.0px;
+  padding: -5px 0  19px 0;
+  margin-right:-13px;
+  background:#000;
   /*-webkit-animation-duration: 800ms;
           animation-duration: 800ms;
   -webkit-animation-name: light;
@@ -1193,9 +1194,9 @@ h1 {
   left:48%;
   box-shadow: 0px 0px 3px  #222;
   border-radius: 50%;
-  margin: 0px -5px 0 0px;
-  width: 6px;
-  height: 5.5px;
+  margin: 2px 3px 2px -2px;
+  width: 5.5px;
+  height: 5px;
   z-index: 999;
   background: linear-gradient(155deg, rgba(255, 255, 255, 0.24) 0%, rgba(255, 255, 255, 0.14) 25%, rgba(255, 255, 255, 0.18) 49%, rgba(0, 0, 0, 0) 78%, rgba(0, 0, 0, 0.8) 100%);
   -webkit-transform: scale(0);
@@ -1389,11 +1390,11 @@ h1 {
 /*fireflyのcss*/
 .firefly.light {
   position: relative;
-  top:0;
-  left:0.7%;
-  width: 44.7px;
-  height: 24.5px;
-  padding: 9px 0  6px 0;
+  top:-1px;
+  left:0.45%;
+  width: 34.4px;
+  height: 17.6px;
+  padding: 4px 0  10px 0;
   margin-right:-8px;
   background-color: #000;
 
@@ -1414,7 +1415,7 @@ h1 {
   border-radius: 50%;
   margin: 0px -5px 0 0px;
   width: 5px;
-  height: 5px;
+  height: 7px;
   z-index: 1;
 }
 #light-1.firefly .bulb,
@@ -1484,31 +1485,37 @@ h1 {
     transform:scale(0.85);
   }
   .body img{
-  margin-top:-111.1px;
-  margin-left:46.01%;
+  margin-top:-49.0px;
+  margin-left:47.15%;
 }
 
 .body-logo img{
-  top:256.8px;
-  left:47.75%;
+  top:259.8px;
+  left:49.25%;
 }
  }
 
 @media screen and (max-width: 670px) {
   .body img{
-  margin-top:-97.0px;
-  margin-left:41.275%;
+  margin-top:-49.2px;
+  margin-left:43.4%;
 
 }
 .luminous{
-  transform:scale(0.77);
+  transform:scale(0.61);
 }
-.firefly .bulb{
-  top:-2.5px;
-  left:10%;
+.firefly.light{
+  top:0.2px;
 }
 .body-logo img{
-  top:270.8px;
-  left:48.3%;
+  top:263.8px;
+  left:48.56%;
+}
+h1{
+  margin-top:-50px;
+}
+.controls{
+  transform:scale(0.9);
+  margin-top:-50px;
 }
  }
