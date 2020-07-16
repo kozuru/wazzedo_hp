@@ -6,7 +6,7 @@ body{
   font-family:"Hiragino Kaku Gothic ProN",snas-serif;/*フォントをゴシック体*/
   padding:0px 0px;
   margin:0px 0px;
-  background-color:#001;
+  background-color:#011;
 }
 
 /*本文のcss*/
@@ -37,10 +37,10 @@ header {
 }
 
 .header-left img{
-  width:130px;
+  width:120px;
   height:auto;
   margin-top:-15px;
-  margin-left:20px;
+  margin-left:10px;
 
 }
 .header-left p{
@@ -626,9 +626,9 @@ p{
 .business-profile{
   margin-top:10px;
   width:100%;
-  height:1280px;
+  height:950px;
   text-align:center;
-  /*background-color:rgba(0,0,0,1);*/
+  
 }
 .card-container{
   width: 100%;
@@ -651,7 +651,7 @@ p{
 .card-container .card .face.face1{
   position: relative;
   /*background: linear-gradient(#ef93b6,#e5bfba,#ffe);*/
-  background:linear-gradient(#000000,#262626,#4d4d4d,#737373);
+  background:linear-gradient(#141414,#262626,#4d4d4d,#636363);
   display: flex;
   justify-content: center;
   align-content:center;
@@ -742,10 +742,10 @@ ntainer .card .face.face1 .content{
   text-align: center;
 }
 .card-container .card:hover .face.face1 .content h3{
-  color:#fff;
+  color:#000;
   }
  .card-container .card:hover .face.face1 .content i{
-  color:#fff;
+  color:#000;
   }
 .card-container .card .face.face1 .content a{
    transition: .5s;
@@ -759,7 +759,7 @@ ntainer .card .face.face1 .content{
    justify-content: center;
    padding: 20px;
   box-sizing: border-box;
-  box-shadow: 0 10px 30px rgba(245,240,255,.8);
+  box-shadow:  0 0 3px 2px rgba(223,190,211,.8);
   transform: translateY(-100px);
 }
 
@@ -771,7 +771,8 @@ ntainer .card .face.face1 .content{
   font-size: 10pt;
   margin: 0 ;
   padding: 0;
-  color:#333;
+  color:#112;
+  text-align:left;
 }
 
 .card-container .card .face.face2 .content a{
@@ -1312,15 +1313,16 @@ width: 700px;
   padding:0;
   margin:0;
 }
-header{
-  transform:scale(0.7);
-  width:100%;
+.rotate{
+  left:106%;
 }
-.header-left img{
-  margin-left:-90px;
+.header-left{
+  transform:scale(0.87);
+  margin-left:-60px;
 }
 .header-right{
-  margin-right:-120px;
+  transform:scale(0.87);
+  
 }
 .business-top-wrapper{
   width:1000px;
@@ -1329,11 +1331,11 @@ header{
 }
 #slideshow{
   transform:scale(0.9);
-   margin-top:0px;
+   margin-top:10px;
    margin-left:-160px;
 }
 .business-profile{
-  height:1200px;
+  height:1050px;
 }
 .stroke h1{
   font-size:14px;
@@ -1346,7 +1348,10 @@ header{
 }
 .business-contents{
   transform:scale(0.8);
-  height:2100px;
+  height:2300px;
+}
+nav   ul {
+  margin-left:50px;
 }
 .example0001 table{
   margin-left:-100px;
@@ -1364,17 +1369,22 @@ header{
 /**---------------------------**/
 /*-----------------------------*/
 @media(max-width:670px){
+  html,
+	body {
+		overflow-x: hidden;
+		overflow-y: scroll;
+		-webkit-overflow-scrolling: touch;
+	}
 .main{
   padding:0;
   margin:0;
  }
-header{
-  transform:scale(0.82);
-  float:none;
+.header-left{
+  transform:scale(0.83);
+  margin-left:-65px;
 }
-.header-left img{
-  margin-left:0px;
-  margin-top:5px
+.rotate{
+   left:56%;
 }
 footer{
   float:none;
