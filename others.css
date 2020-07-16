@@ -129,7 +129,7 @@ table{
   }
 @media all and (max-width:670px){
   .wrapper,.j,.body-logo img {
-  transform:scale(0.71);
+  transform:scale(0.72);
   }
   .wrapper{
    top:86.0px;
