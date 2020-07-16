@@ -6,20 +6,20 @@ body{
   font-family:"Hiragino Kaku Gothic ProN",snas-serif;/*フォントをゴシック体*/
   padding:0px 0px;
   margin:0px 0px;
-  background-color:#011;
+  background-color:#001;
 }
 
 /*本文のcss*/
 .main{
   padding:0 190px;
   width:100%;
+  margin:0px auto;
 }
-.containers{
+/*.containers{
   max-width:1200px;
   width:100%;
   margin:0px auto;
-}
-
+}*?
 /*headerのcss*/
 header {
   width:100%;
@@ -38,10 +38,10 @@ header {
 }
 
 .header-left img{
-  width:130px;
+  width:120px;
   height:auto;
   margin-top:-15px;
-  margin-left:20px;
+  margin-left:10px;
 
 }
 .header-left p{
@@ -74,6 +74,7 @@ header {
 }
 .header-right a{
   width:140px;
+  font-size:15px;
 }
 .header-right li :hover,
 header .menu-btn:hover {
@@ -186,11 +187,9 @@ header .menu-btn:hover {
 	display: none;
 	position: absolute;
 	top: 60px; /* the height of the main nav */
-  background:#ddd;
 }
 .header-right ul li:hover > ul {
 	display:inherit;
-
 }
 .header-right ul ul li {
 	width:140px;
@@ -199,10 +198,9 @@ header .menu-btn:hover {
 	position: relative;
 }
 .header-right ul ul li a{
-  font-size:9.5px;
+  font-size:10px;
   white-space:nowrap;
-
-  color:#000;
+  padding-left:-5px;
 }
 /*----------------*/
 /* hamburger-menu */
@@ -287,7 +285,7 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
 /*responsive*/
 
 /* 48em = 768px */
-@media (min-width: 48em) {
+@media (min-width: 670px) {
   .header-left{
     clear:both;
   }
@@ -307,41 +305,40 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   }
 }
 
-
 /*----------------*/
 /* トップに戻るcss*/
 /*----------------*/
-#page_top{
+#pagetop{
   width: 50px;
   height: 50px;
   position: fixed;
-  right: 0;
-  bottom: 0;
-  background-color: #000011;
-  opacity: 0.6;
+  right: 20px;
+  bottom: 15px;
+  background: #000;
+  opacity: 0.7;
 }
-#page_top a{
+#pagetop a{
   position: relative;
   display: block;
   width: 50px;
   height: 50px;
   text-decoration: none;
+  text-align: center;
 }
-#page_top a::before{
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 900;
+#pagetop a::before{
+  font-family: "Font Awesome 5 Free";
   content: '\f102';
-  font-size: 25px;
+  font-weight: 900;
+  font-size: 30px;
   color: #fff;
   position: absolute;
   width: 25px;
   height: 25px;
-  top: 0;
-  bottom: 0;
+  top: 5px;
+  bottom: 10px;
   right: 0;
   left: 0;
   margin: auto;
-  text-align: center;
 }
 /*トップ戻る終了*/
 /*----------------*/
@@ -353,12 +350,12 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
 
   position: absolute;
   top:0.4vw;
-  left:50vw;
+  left:48vw;
   transform-origin: center;
   /*transform-style: preserve-3d;*/
 }
 .rotate .front {
-  background-image:url("https://i.imgur.com/xzY30xP.png ");
+  background-image:url("https://i.imgur.com/xzY30xP.png");
   background-size:30px 30px;
   background-position:center center;
   background-repeat:no-repeat;
@@ -475,22 +472,68 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
     transform: rotateY(360deg);
   }
 }
+/*-------------*/
+/*footerのcss*/
+/*-------------*/
+footer{
+  clear:both;
+  width:100%;
+  height:75px;
+  background-color:#000;
+  opacity:0.9;
+}
+.footer-left
+{
+  float:left;
+  padding-left:20px;
+  padding-top:7px;
+  font-size:14px;
+  color:#fff;
+}
+.footer-right{
+  float:right;
+  margin-right:20px;
+  line-height:75px;
+  color:#fff;
+}
+.footer-right a{
+  padding-right:10px;
+  font-size:14px;
+  text-decoration:none;
+  color:#fff;
+  opacity:0.8;
+  transition:all 0.5s;
+}
+.footer-right a:hover{
+  opacity:1.0;
+  text-decoration:underline;
+}
+
+
 /*---------------*/
 /* pageflipcss  */
 /*---------------*/
+/*page-flipの表示部*/
+.top-wrapper {
+   position: relative;
+   margin-top:80px;
+   margin-bottom:-100px;
+   height:400px;
+   width:100%;
+   transform:scale(0.85);
+}
 #all
 {
   width:680px;
-  margin-top: 150px;
+  margin-top: 100px;
   margin-left: 0;
  /* margin-right: auto;*/
 }
 #page-flip
 {
-
   position: absolute;
-  top:70px;
-  left:40%;
+  top:60px;
+  left:36%;
   width: 300px;
   height: 400px;
   /*overflow: hidden;*/
@@ -671,13 +714,7 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   transform-origin: 0 0;
   transform: translate(1000px, 500px) rotate(0deg);
 }
-/*page-flipの表示部*/
-.top-wrapper {
-   position: relative;
-   margin-top:19vh;
-   height:58.6vh;
-   width:100%;
-}
+
 /*^^^^^^^^^^^^^^^*/
 /*代表者のご挨拶*/
 /*---------------*/
@@ -787,8 +824,10 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   width:260px;
 }
 .company-profile h2{
+  color:#fff;
+  font-size:18px;
   text-decoration:underline;
-  padding:10px 20px;
+  padding:10px 30px;
 }
 /* 新着情報css*/
 .news{
@@ -871,195 +910,63 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   color:#fff;
 }
 
-/*-------------------------------*/
-/*-------------------------------*/
-/*BUSINESSのCSS*/
-/*-------------------------------*/
-/*-------------------------------*/
-.business-top-wrapper{
-  padding:100px 0px 40px 0px;
-  margin-top:75px;
-  height:460px;
-}
-.business-wrapper{
-  background-color:snow;
-  height:3000px;
-}
-/*右カラム*/
-.business-contents{
-  float:left;
-  width:750px;
-  padding-left:50px;
-  padding-top:40px;
-  padding-bottom:60px;
-  border-radius:5px;
-  line-height:2.0;
-  letter-spacing:0.2em;
-  color:dimgray;
-  letter-spacing:0.1em;
-  font-size:95%
-}
-.title h3{
-  text-align:center;
-  padding:10px 0px;
-  font-size:30px;
-}
-.business image{
-  text-align:center;
-  margin-bottom:20px;
-}
-.business p{
-  padding:10px 10px;
-  text-align:left;
-}
-.business ul{
-  margin:10px 0;
-  text-align:left;
-  text-decoration:underline;
-  color:gray;
-}
-.business li{
-  list-style:circle;
-}
-.business h3{
-  color:dimgray;
-}
-
-.sign{
-  font-family:“HGP” , “MS PMincho”, serif;
-  font-weight:bold;
-  font-size:20px;
-}
-.business-contents table{
-  width:550px;
-  border-collapse:collapse;
-  color:dimrlay;
-  font-size:14px;
-}
-.example0001 table th{
-	padding:10px;
-	text-align:center;
-	background-color:#ccccee;
-	border-bottom:dotted #666666 1px;
-	color:dimgray;
-}
-.example0001 table td{
-  padding:5px;
-	background-color:#eeeeff;
-	border-bottom:dotted #666666 1px;
-}
-.example0001 table img{
-  width:340px;
-  height:170px;
-  display: block;
-	transition: all 0.5s ease;
-}
-.example0001 table img:hover{
-  transform: scale(2.5, 2.0);
-}
-.example0002 table th{
-	padding:10px 30px;
-	text-align:center;
-	background-color:#ccccee;
-	border-bottom:dotted #666666 1px;
-	color:dimgray;
-}
-.example0002 table td{
-  padding:10px 30px;
-  text-align:center;
-	background-color:#eeeeff;
-	border-bottom:dotted #666666 1px;
-}
-.example0002 table img{
-  width:120px;
-  height:250px;
-  transition:all 0.5s ease;
-}
-.example0002 table img:hover{
-  transform: scale(2.0, 1.8);
-}
-.business-contents ul{
-  padding-left:60px;
-}
-.business-contents h3{
-  margin:20px 0;
-  text-decoration:underline dotted;
-  padding-right:10px;
-}
-.business-contents h4{
-  margin-bottom:10px;
-  padding-left:10px;
-}
-.business-contents p{
-  padding-left:10px;
-  opacity:0.8;
-}
-
-/*rotationアニメーション css*/
-
-/*-------------*/
-/*footerのcss*/
-/*-------------*/
-footer{
-  clear:both;
-  width:100%;
-  height:75px;
-  background-color:#000;
-  opacity:0.9;
-}
-.footer-left
-{
-  float:left;
-  padding-left:20px;
-  padding-top:7px;
-  font-size:14px;
-  color:#fff;
-}
-.footer-right{
-  float:right;
-  margin-right:20px;
-  line-height:75px;
-  color:#fff;
-}
-.footer-right a{
-  padding-right:10px;
-  font-size:14px;
-  text-decoration:none;
-  color:#fff;
-  opacity:0.8;
-  transition:all 0.5s;
-}
-.footer-right a:hover{
-  opacity:1.0;
-  text-decoration:underline;
-}
-
 
 /*--------------------------------*/
 /*--------------------------------*/
 /*タブレットresponsive*/
 /*--------------------------------*/
 /*--------------------------------*/
-@media(max-width:960px){
-  .header-left p{
-  color:#00ff00;
-  }
-  .main{
-  padding:0 0;
-  width:100%;
-  clear:both;
+@media(max-width:1070px){
+ .main{
+  padding:0;
+  margin:0;
 }
-.container{
-  margin:0 ;
+.rotate{
+  top:-15px;
+  left:106%;
 }
-.message-wrapper,.company-wrapper{
+.header-left{
+  transform:scale(0.87);
+  margin-left:-25px;
+  margin-top:20px;
+}
+.header-right{
+  transform:scale(0.88);
+}
+footer{
+  transform:scale(0.91);
+}
+.top-wrapper{
+ width:550px;
+ max-width:100%;
+ transform:scale(0.5);
+ margin-left:85px;
+ margin-top:-70px;
+ margin-bottom:-220px;
+}
+#page-flip
+{
+  top:35px;
+  left:22%;
+}
+.message-wrapper .heading{
+  transform:scale(0.9);
+}
+.content{
+  margin-left:45px;
+}
+.company-profile{
+  
+}
+
+/*.message-wrapper,.company-wrapper{
   background-size:cover;
-}
+}*/
 .masseg-wrapper{
   height:1880px;
 }
 .company-wrapper{
-  height:2550px;
+  height:2250px;
 }
 .message-content{
   width:600px;
@@ -1067,15 +974,7 @@ footer{
 #info{
   width:600px;
 }
-.rotate {
-  width: 60px;
-  height: 50px;
-  position: absolute;
-  top:0.4vw;
-  left:65vw;
-  transform-origin: center;
-  /*transform-style: preserve-3d;*/
-}
+
 #all
 {
   width:780px;
@@ -1083,11 +982,7 @@ footer{
   margin-left: 0;
  /* margin-right: auto;*/
 }
-#page-flip
-{
-  position: absolute;
-  padding: 40px 0px 40px 140px;
-}
+
 #info table{
   width:560px;
 }
@@ -1098,7 +993,13 @@ footer{
   height:280px;
   margin-left:20px;
 }
-
+#info0003{
+  margin-top:20px;
+  margin-left:40px;
+}
+.map{
+  
+}
 .map p {
   float:none;
   text-align:center;
@@ -1107,10 +1008,8 @@ footer{
   float:none;
   width:350px;
   display:block;
-  padding-left:15px;
-}
- header ul {
-  /*overflow: hidden;*/
+  margin-top:20px;
+  margin-left:70px;
 }
 
 }
@@ -1120,64 +1019,66 @@ footer{
 /*スマホresponsive*/
 /**---------------------------**/
 /*-----------------------------*/
-
 @media(max-width:670px){
-  .main{
-  padding:0 0;
-  width:100%;
-  clear:both;
+  html,
+	body {
+		overflow-x: hidden;
+		overflow-y: scroll;
+		-webkit-overflow-scrolling: touch;
+	} /*画面横揺れ防止*/
+ .main{
+   padding:0;
+   margin:0 auto;
+   text-align:center;
+   clear:clear;
 }
-
-/*.header-left p{
-  color:#00ff00;
+.menu-icon{
+  margin-top:30px;
+  margin-right:10px;
+}
+.rotate{
+  top:-15px;
+  left:51%;
+}
+header{
+}
+.header-left{
+  transform:scale(0.8);
+  margin-left:-25px;
+  margin-top:20px;
+}
+/*.header-right{
+  transform:scale(0.8);
 }*/
-.header-right ul {
-   /*overflow: hidden;*/
+footer{
+  float:none;
+  transform:scale(0.9);
 }
-.container{
-  margin:0 ;
+footer .footer-right{
+  transform:scale(0.85);
+  float:none;
+  margin-bottom:20px;
 }
-.heading{
-  margin-left:-20px;
+footer .footer-right small{
   display:block;
+  margin-top:-45px;
+  white-space:nowrap;
 }
-.heading h1{
-  font-size:28px;
-}
-.heading h3{
-  font-size:18px;
-}
-.company-profile h2{
-  font-size:18px;
-}
-.header-right ul {
-   overflow: hidden;
-}
-.company-profile .news{
-  max-width:300px;
-  width:100%;
-  margin-left:-10px;
-  font-size:12px;
-}
-#all
-{
-  width:680px;
-  margin-top: 150px;
-  margin-left: 0;
- /* margin-right: auto;*/
+.top-wrapper{
+  width:500px;
+ max-width:100%;
+ transform:scale(0.38);
+ position:relative;
+ margin-left:10px;
+ margin-top:-140px;
+ margin-bottom:-240px;
 }
 #page-flip
 {
-  display:block;
-  position: absolute;
-  top:0;
-  left:-35%;
-  width: 300px;
-  height: 400px;
-  /*overflow: hidden;*/
+  top:22px;
+  left:4%;
 }
-
-.message-content .content {
+ .message-content .content {
   width:320px;
   padding-left:5px;
 }
@@ -1186,22 +1087,21 @@ footer{
   /*background-color:#000;*/
   background-image:url("kawa.jpg");
   background-size:320px auto;
-  height:900px;
+  height:780px;
 }
-.company-wrapper{
-  background-image:url("GODBLADE_DEMO.jpg");
-  background-size:320px auto;
-  height:1150px;
+.message-wrapper .heading{
+  transform:scale(0.65);
+  margin-top:-60px;
+  margin-bottom:15px;
 }
-#info table{
-  max-width:300px;
-  width:100%;
-  margin-left:20px;
-  font-size:12px;
+.content{
+  transform:scale(0.9);
+  width:550px;
+  max-width:100%;
+  margin-top:-150px;
+  margin-left:10px;
 }
-#info table th{
-  width:80px;
-}
+
 .content p{
   padding:10px 10px;
   font-size:12px;
@@ -1214,22 +1114,61 @@ footer{
 .content li{
    font-size:11px;
 }
-#info0003{
-  font-size:16px;
-  margin-top:30px;
-  margin-bottom:10px;
+.company-wrapper{
+  transfor:scale(0.6);
+  background-image:url("GODBLADE_DEMO.jpg");
+  background-size:320px auto;
+  height:1100px;
 }
-
+.company-profile .news{
+  width:700px;
+  max-width:100%;
+  margin-left:15px;
+  font-size:12px;
+}
+.company-profile h2{
+  margin-top:-20px;
+  margin-left:50px;
+  font-size:16px;
+}
+#info table{
+  transform:scale(0.8);
+  width:400px;
+  max-width:100%;
+  margin-left:-35px;
+  font-size:14px;
+}
+#info table th{
+  width:75px;
+}
+#info h3{
+  font-size:16px;
+  margin-left:-290px;
+  margin-bottom:-60px;
+}
+#info0001{
+  margin-top:30px;
+}
+#info0002{
+  margin-top:-30px;
+}
+#info0003{
+  margin-top:-40px;
+}
 .map p{
+  transform:scale(0.75);
   float:none;
   width:280px;
   height:auto;
+  margin-left:-20px;
+  margin-top:15px;
 }
 .remark{
   float:none;
   width:280px;
   display:block;
-  margin-top:20px;
+  text-align:left;
+  margin-top:-10px;
   margin-left:25px;
 }
 .remark h6{
@@ -1243,20 +1182,9 @@ footer{
   color:#fff;
   font-size:14px;
 }
-.footer-left
-{
-  width:320px;
-  text-align:left;
-  font-size:12px;
+
+.company-profile{
+  
 }
-.footer-right{
- line-height:1.8;
- margin-left:5px;
- font-size:12px;
- margin-top:20px;
- margin-bottom:40px;
-}
-.rotate {
-  display:none;
-}
+
 }
