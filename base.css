@@ -38,9 +38,9 @@ header {
 }
 
 .header-left img{
-  width:120px;
+  width:128px;
   height:auto;
-  margin-top:-15px;
+  margin-top:-12px;
   margin-left:10px;
 
 }
@@ -355,8 +355,8 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   /*transform-style: preserve-3d;*/
 }
 .rotate .front {
-  background-image:url("https://i.imgur.com/xzY30xP.png");
-  background-size:30px 30px;
+  background-image:url("rotation-logo.png");
+  background-size:22px 22px;
   background-position:center center;
   background-repeat:no-repeat;
   /*border:2px solid;
@@ -364,8 +364,8 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   border-image-slice: 1;*/
 }
 .rotate .back {
-  background-image:url("https://i.imgur.com/xzY30xP.png ");
-  background-size:30px 30px;
+  background-image:url("rotation-logo.png ");
+  background-size:22px 22px;
   background-position:center center;
   background-repeat:no-repeat;
   visibility:visible;
@@ -1032,20 +1032,16 @@ footer{
    text-align:center;
    clear:clear;
 }
-.menu-icon{
-  margin-top:30px;
-  margin-right:10px;
+.header-left{
+  transform:scale(0.83);
+  margin-left:-65px;
 }
 .rotate{
-  top:-15px;
-  left:51%;
+   left:56%;
+   top:7px;
 }
-header{
-}
-.header-left{
-  transform:scale(0.8);
-  margin-left:-25px;
-  margin-top:20px;
+headr{
+  margin-top:-5px;
 }
 /*.header-right{
   transform:scale(0.8);
