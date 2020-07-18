@@ -185,12 +185,13 @@ header .menu-btn:hover {
 /*sub-menu 多階層　css*/
 .header-right ul ul {
 	display: none;
+	color:#111;
 	position: absolute;
 	top: 60px; /* the height of the main nav */
 }
 .header-right ul li:hover > ul {
 	display:inherit;
-	color:#111;
+	
 }
 .header-right ul ul li {
 	width:140px;
