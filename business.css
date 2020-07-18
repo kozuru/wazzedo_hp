@@ -6,7 +6,7 @@ body{
   font-family:"Hiragino Kaku Gothic ProN",snas-serif;/*フォントをゴシック体*/
   padding:0px 0px;
   margin:0px 0px;
-  background-color:#011;
+  background-color:#000;
 }
 
 /*本文のcss*/
@@ -514,6 +514,7 @@ footer{
 .business-top-wrapper{
   height:350px;
   font-family:serif;
+  position:relative;
    /*position:fixed;*/
   /*background-color:rgba(0,0,0,0.6);*/
 }
@@ -527,7 +528,9 @@ footer{
   -webkit-filter: grayscale(88%);
   position:absolute;
   top:90px;
-  left:31%;
+  left:50%;
+  transform:translateX(-50%);
+  -webkit-transform:translateX(-50%);
 }
 
 h1{
@@ -629,7 +632,7 @@ p{
   width:100%;
   height:950px;
   text-align:center;
-  
+
 }
 .card-container{
   width: 100%;
@@ -822,12 +825,12 @@ ntainer .card .face.face1 .content{
 /*---------------------------------*/
 .business-contents{
   width:100%;
-  height:2480px;
+  height:2700px;
   text-align:center;
 }
 
 .business-contents .container h1 {
-  font-size: 18px;
+  font-size: 20px;
   text-align: center;
   color:#fee;
 }
@@ -839,6 +842,11 @@ ntainer .card .face.face1 .content{
 .business-contents .container h5{
   font-size:16px;
   text-align:center;
+  color:#fff;
+}
+.business-contents .container h6{
+  text-align:center;
+  font-size:20px;
   color:#fff;
 }
 .click h2{
@@ -876,7 +884,7 @@ width: 700px;
   list-style: none;
   display: flex;
   padding: 0;
-  margin-left:235px;
+  margin-left:195px;
 }
  nav  ul li {
   cursor: pointer;
@@ -968,9 +976,8 @@ width: 700px;
 /*ピアッサーmodal css*/
 .animatos{
   max-width:1200px;
-  margin-top:50px;
   width:50%;
-  height:430px;
+  height:460px;
   margin:0 auto;
   cursor:pointer;
 }
@@ -980,18 +987,19 @@ width: 700px;
 .animato img{
    border:2px solid #e5c100;
 }
-.animato h3{
+.animatos .piassa h3{
   color:#fff;
-  padding:15px 0  0px 0;
-  margin-left:60px;
-  font-size:16px;
+  padding:25px 0  0px 0;
+  margin-left:80px;
+  margin-top:70px;
+  font-size:17px;
   white-space:nowrap;
 }
-.animato p{
+.animatos .piassa p{
   color:#fff;
   margin-top:-9px;
   margin-left:60px;
-  font-size:12px;
+  font-size:14px;
 }
 .animatos .modal {
   display: none;
@@ -1018,7 +1026,7 @@ width: 700px;
   position: relative;
   background-color: #000000;
   width: 390px;
-  height: 440px;
+  height: 450px;
   border-radius: 20px;
   box-shadow: 0px 9px 20px 0px #FFFFFF;
 }
@@ -1076,8 +1084,9 @@ width: 700px;
   background-color:#000;
   position:relative;
   width:800px;
-  height:450px;
+  height:380px;
   margin-left:100px;
+  margin-top:-50px;
   cursor:pointer;
   /*background-image:url("https://i.imgur.com/NqyrvLg.gif");*/
   /*background-image:url("https://i.imgur.com/NFN5AFd.gif");*/
@@ -1090,7 +1099,7 @@ width: 700px;
   color:#fff;
   margin-left:40px;
   margin-bottom:70px;
-  font-size:14px;
+  font-size:12px;
 }
 .penlight-rotation img{
   position:absolute;
@@ -1123,7 +1132,7 @@ width: 700px;
   position: relative;
   background-color: #000000;
   width: 400px;
-  height: 450px;
+  height: 460px;
   border-radius: 20px;
   box-shadow: 0px 9px 20px 0px #FFFFFF;
 }
@@ -1132,6 +1141,7 @@ width: 700px;
   color: #fff;
   font-size: 12px;
   text-align:left;
+  margin-top:10px;
   margin-bottom:30px;
   margin-left:13px;
   margin-right:5px;
@@ -1144,7 +1154,9 @@ width: 700px;
   text-decoration: none;
   font-weight: 900;
 }
-
+.main-rotation .modal-open_1 img{
+  margin-top:50px;
+}
 .main-rotation .modal-close_1 {
   position: absolute;
   top: 10px;
@@ -1172,7 +1184,7 @@ width: 700px;
  .main-rotation .chipled img {
  position: absolute;
  top:-40px;
- left:10px;	 
+ left:10px;
 }
 .main-rotation figure figcaption {
 	  margin-left:140px;
@@ -1184,7 +1196,7 @@ width: 700px;
 }
 .loader {
   position: absolute;
-  top: 20px;
+  top: 75px;
   right: 0;
 
   left: 0;
@@ -1323,17 +1335,22 @@ width: 700px;
 }
 .header-right{
   transform:scale(0.87);
-  
+
 }
 .business-top-wrapper{
-  width:1000px;
+  width:1070px;
   max-width:100%;
   height:320px;
+  position:relative
 }
 #slideshow{
   transform:scale(0.9);
    margin-top:10px;
-   margin-left:-160px;
+   position:absolute;
+   left:50%;
+   transform:translateX(-50%);
+   -webkit-transform:translateX(-50%);
+
 }
 .business-profile{
   height:1050px;
@@ -1345,7 +1362,7 @@ width: 700px;
   font-size:10px;
 }
 .card-container {
- transform:scale(0.9); 
+ transform:scale(0.9);
 }
 .business-contents{
   transform:scale(0.8);
@@ -1378,6 +1395,7 @@ nav   ul {
 .main{
   padding:0;
   margin:0;
+  position:relative;
  }
 .header-left{
   transform:scale(0.83);
@@ -1389,7 +1407,7 @@ nav   ul {
 }
 .menu-icon{
    margin-top:45px;
-	}		
+	}
 footer{
   float:none;
   transform:scale(0.9);
@@ -1408,38 +1426,53 @@ footer .footer-right small{
 .business-top-wrapper{
   width:500px;
   max-width:100%;
-  height:210px;
+  height:180px;
+  transform:scale(0.51);
 }
 #slideshow{
-   transform:scale(0.54);
-   margin-top:-40px;
-   margin-left:-212px;
-   margin-bottom:0px;
+   margin-top:30px;
+   position:absolute;
+   left:50%;
+   transform:translateX(-50%);
+   -webkit-transform:translateX(-50%);
+   margin-bottom:-120px;
 }
 .business-profile{
-  height:1670px;
+  height:1650px;
 }
 .stroke h1{
   font-size:14px;
 }
 .stroke p{
   font-size:10px;
-  margin-bottom:-90px;
+  margin-bottom:-140px;
+}
+.card-container{
+  /*position:relative;*/
 }
 .card{
-  margin-left:15px;
+  position: absolute;
+  left:50%;
+  transform:translateX(-50%);
+  -webkit-transform:translateX(-50%);
+  /*margin-left:20px;*/
 }
 .business-contents{
-  height:1980px;
+  margin:0;
+  padding:0;
+  height:2100px;
 }
 .container{
-  transform:scale(0.9);
+  transform:scale(0.96);
 }
-.slider{
- 
+nav{
+  margin-left:-70px;
 }
-nav   ul {
-  margin-left:-110px;
+nav ul {
+  /*margin-left:-80px;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transform:scale(0.6);
 }
 .slider img{
@@ -1447,42 +1480,62 @@ nav   ul {
 }
 .business-contents .container h1{
   white-space:nowrap;
+  font-size:20px;
 }
 .business-contents .container h5{
   padding-top:0px;
+  margin-bottom:-40px;
+  font-size:16px;
+  text-align:left;
+}
+.business-contents .container h6{
+  font-size:20px;
   margin-bottom:-70px;
 }
+.business-contents .container p{
+  font-size:20px;
+}
 .click h2{
-  margin-top:-70px;
+  margin-top:-160px;
+}
+.example0001{
+  /*position:relative;*/
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 .example0001 table{
- margin-left:-300px;
+ /*margin-left:-270px;*/
+  margin-left:-150px
 }
 .animatos{
-   margin-top:50px;
+   margin-top:60px;
+   margin-left:60px;
+   width:650px;
+   max-width:100%;
+}
+.animatos .piassa  h3{
+  margin-top:10px;
+  margin-bottom:-5px;
+  margin-left:0px;
+  font-size:20px;
+}
+.animatos .piassa  p{
+  margin-left:-30px;
+  margin-bottom:-25px;
+  font-size:18px;
 }
 .animatos .modal-open img{
-  margin-top:80px;
-  width:1300px;
-  max-width:100%;
-  height:auto;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%,-50%);
+  margin-top:0px;
+  transform:scale(0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.animato  h3{
-  margin-top:-10px;
-  margin-bottom:5px;
-  margin-left:30px;
-  font-size:16px;
-}
-.animato  p{
-  margin-left:0px;
-  margin-bottom:-10px;
-  font-size:13px;
-}
+
 .animatos .modal-box{
   top:700px;
+  transform:scale(0.8);
 }
 .animatos .modal-box p{
   margin-top:10px;
@@ -1490,7 +1543,7 @@ nav   ul {
 .animatos figure{
   top:30px;
 }
- 
+
  .main-rotation{
     width:650px;
     max-width:100%;
@@ -1498,26 +1551,27 @@ nav   ul {
     margin-left:0px;
     margin-top:-150px;
   }
- .main-rotation .modal-open_1 img{ 
+ .main-rotation .modal-open_1 img{
   transform:scale(0.94);
-  margin-top:0px;
-  
+  margin-top:70px;
  }
 .main-rotation .modal-box{
   top:920px;
+    transform:scale(0.8);
 }
   .main-rotation h6{
-    font-size:14px;
+    font-size:12px;
     margin-left:350px;
     margin-bottom:10px;
   }
   .loader{
-    transform:scale(0.81);
+    transform:scale(0.82);
+    margin-top:60px;
   }
 .main-rotation h6{
- margin-left:-50px; 
+ margin-left:-53px;
  margin-bottom:25px;
- font-size:12px;
+ font-size:11px;
 }
 
 /*  .box-range-slider {
