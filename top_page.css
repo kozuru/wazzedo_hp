@@ -244,7 +244,7 @@ top: 4px;
 content: '';
 }
 ul .sub-menu li{
-  font-size:14px;
+  font-size:1px;
 }
 
 @media(max-width:670px){
