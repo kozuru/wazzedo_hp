@@ -1408,21 +1408,21 @@ nav   ul {
 .menu-icon{
    margin-top:45px;
 	}
-footer{
-  float:none;
-  transform:scale(0.9);
-  margin-left:-15px;
-}
-footer .footer-right{
-  transform:scale(0.85);
-  float:none;
-  margin-bottom:20px;
-}
-footer .footer-right small{
-  display:block;
-  margin-top:-45px;
-  white-space:nowrap;
-}
+  footer{
+    float:none;
+    transform:scale(0.93);
+  }
+  footer .footer-right{
+    transform:scale(0.85);
+    margin-top:-10px;
+    margin-left:10px;
+    margin-bottom:20px;
+  }
+  footer .footer-right small{
+    display:block;
+    margin-top:-45px;
+    white-space:nowrap;
+  }
 .business-top-wrapper{
   width:500px;
   max-width:100%;
@@ -1484,7 +1484,7 @@ nav ul {
 }
 .business-contents .container h5{
   padding-top:0px;
-  margin-bottom:-40px;
+  margin-bottom:-10px;
   font-size:16px;
   text-align:left;
 }
@@ -1506,11 +1506,11 @@ nav ul {
 }
 .example0001 table{
  /*margin-left:-270px;*/
-  margin-left:-150px
+  margin-left:-180px
 }
 .animatos{
    margin-top:60px;
-   margin-left:60px;
+   margin-left:30px;
    width:650px;
    max-width:100%;
 }
@@ -1527,7 +1527,7 @@ nav ul {
 }
 .animatos .modal-open img{
   margin-top:0px;
-  transform:scale(0.7);
+  transform:scale(0.6);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1535,7 +1535,7 @@ nav ul {
 
 .animatos .modal-box{
   top:700px;
-  transform:scale(0.8);
+
 }
 .animatos .modal-box p{
   margin-top:10px;
@@ -1557,7 +1557,7 @@ nav ul {
  }
 .main-rotation .modal-box{
   top:920px;
-    transform:scale(0.8);
+
 }
   .main-rotation h6{
     font-size:12px;
