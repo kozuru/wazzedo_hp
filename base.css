@@ -952,7 +952,7 @@ footer{
   left:22%;
 }
 .message-wrapper .heading{
-  transform:scale(0.92);
+  transform:scale(0.93);
 }
 .content{
   margin-left:45px;
@@ -1047,18 +1047,19 @@ headr{
   margin-top:-15px;
 }
 .menu-icon{
-  margin-top:42px;
+  margin-top:43px;
 }
 /*.header-right{
   transform:scale(0.8);
 }*/
 footer{
   float:none;
-  transform:scale(0.9);
+  transform:scale(0.93);
 }
 footer .footer-right{
   transform:scale(0.85);
-  float:none;
+  margin-top:-10px;
+  margin-left:10px;
   margin-bottom:20px;
 }
 footer .footer-right small{
@@ -1069,7 +1070,7 @@ footer .footer-right small{
 .top-wrapper{
   width:500px;
  max-width:100%;
- transform:scale(0.38);
+ transform:scale(0.46);
  position:relative;
  margin-left:10px;
  margin-top:-140px;
@@ -1077,8 +1078,8 @@ footer .footer-right small{
 }
 #page-flip
 {
-  top:22px;
-  left:4%;
+  top:25px;
+  left:9%;
 }
  .message-content .content {
   width:320px;
@@ -1089,63 +1090,67 @@ footer .footer-right small{
   /*background-color:#000;*/
   background-image:url("kawa.jpg");
   background-size:320px auto;
-  height:1100px;
+  height:1310px;
 }
 .message-wrapper .heading{
-  transform:scale(0.65);
-  margin-top:-60px;
-  margin-bottom:15px;
+  transform:scale(0.67);
+  margin-top:-55px;
+  margin-bottom:30px;
 }
 .content{
   transform:scale(0.94);
-  width:550px;
+  width:600px;
   max-width:100%;
   margin-top:-150px;
   margin-left:10px;
+  margin-right:0;
 }
 
 .content p{
   padding:10px 10px;
-  font-size:12px;
+  font-size:16px;
 }
 .content ul{
   margin:11px 0;
-  font-size:95%;
+  font-size:15px;
   margin-left:50px;
 }
 .content li{
-   font-size:11px;
+   font-size:96%;
 }
 .company-wrapper{
   transfor:scale(0.61);
   background-image:url("GODBLADE_DEMO.jpg");
-  background-size:400px auto;
+  background-size:410px auto;
   background-repeat-x:no-repeay;
-  height:1100px;
+  height:1120px;
 }
 .company-profile .news{
   width:700px;
   max-width:100%;
   margin-left:15px;
-  font-size:14px;
+  font-size:14.5px;
 }
 .company-profile h2{
   margin-top:-20px;
   margin-left:50px;
-  font-size:16px;
+  font-size:17px;
 }
 #info table{
   transform:scale(0.8);
-  width:400px;
+  width:410px;
   max-width:100%;
   margin-left:-35px;
-  font-size:15px;
+  font-size:16.5px;
 }
 #info table th{
   width:75px;
 }
+#info table td{
+  text-align:left;
+}
 #info h3{
-  font-size:16px;
+  font-size:17px;
   margin-left:-290px;
   margin-bottom:-60px;
 }
@@ -1161,14 +1166,15 @@ footer .footer-right small{
 .map p{
   transform:scale(0.75);
   float:none;
-  width:280px;
+  width:350px;
   height:auto;
   margin-left:-20px;
   margin-top:15px;
 }
 .remark{
   float:none;
-  width:280px;
+  width:360px;
+  max-width:100%;
   display:block;
   text-align:left;
   margin-top:-10px;
@@ -1177,13 +1183,13 @@ footer .footer-right small{
 .remark h6{
   font-weight:normal;
   line-height:2.2;
-  font-size:13.5px;
+  font-size:14px;
   color:#fff;
   opacity:0.8;
 }
 .remark h4{
   color:#fff;
-  font-size:15px;
+  font-size:16px;
 }
 
 .company-profile{
