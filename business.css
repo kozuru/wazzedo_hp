@@ -1370,8 +1370,7 @@ nav   ul {
 /**---------------------------**/
 /*-----------------------------*/
 @media(max-width:670px){
-  html,
-	body {
+  html,	body {
 		overflow-x: hidden;
 		overflow-y: scroll;
 		-webkit-overflow-scrolling: touch;
@@ -1385,8 +1384,12 @@ nav   ul {
   margin-left:-65px;
 }
 .rotate{
+   display:none;
    left:56%;
 }
+.menu-icon{
+   margin-top:45px;
+	}		
 footer{
   float:none;
   transform:scale(0.9);
