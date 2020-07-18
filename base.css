@@ -190,6 +190,7 @@ header .menu-btn:hover {
 }
 .header-right ul li:hover > ul {
 	display:inherit;
+	color:#111;
 }
 .header-right ul ul li {
 	width:140px;
