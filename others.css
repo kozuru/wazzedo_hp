@@ -188,6 +188,11 @@ table{
   }
 }
 @media all and (max-width:670px){
+   html,	body {
+		overflow-x: hidden;
+		overflow-y: scroll;
+		-webkit-overflow-scrolling: touch;
+	}
   .main{
     padding:0;
     margin:0;
@@ -239,6 +244,11 @@ table{
 }
 
 @media all and (max-width:370px){
+   html,	body {
+		overflow-x: hidden;
+		overflow-y: scroll;
+		-webkit-overflow-scrolling: touch;
+	}
    .main{
     padding:0;
     margin:0;
