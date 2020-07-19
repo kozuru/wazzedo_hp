@@ -11,10 +11,10 @@ body {
 h1 {
   font-family: 'Rubik', sans-serif;
   font-weight: 900;
-  font-size:18px;
+  font-size:20px;
   font-style: italic;
   color: #eef;
-  margin: 10px 0 70px 0;
+  margin: 30px 0 70px 0;
   text-transform: uppercase;
   letter-spacing: 0.2em;
   text-align: center;
@@ -25,14 +25,14 @@ h1 {
 }
 .body-logo img{
   position:absolute;
-  top:270.5px;
-  left:49.55%;
+  top:270.0px;
+  left:49.71%;
 }
 /* LIGHT BAR ESSENTIALS */
 .lightbar {
   position: relative;
-  top:-29.3px;
-  left:-0.1%;
+  top:-29.8px;
+  left:-0.01%;
   padding: 0px 10px;
   margin: 0 auto;
   max-width: 262px;
@@ -1491,31 +1491,65 @@ h1 {
 
 .body-logo img{
   top:259.8px;
-  left:49.25%;
+  left:49.55%;
 }
  }
 
 @media screen and (max-width: 670px) {
   .body img{
-  margin-top:-49.2px;
-  margin-left:43.5%;
-
+  top:-49.2px;
+  left:43.4%;
+}
+.lightbar{
+  top:-26.91px;
+  left:2.3%;
 }
 .luminous{
-  transform:scale(0.61);
+  margin-top:50px;
+  transform:scale(0.77);
 }
 .firefly.light{
   top:0.2px;
 }
 .body-logo img{
   top:263.8px;
-  left:48.56%;
+  left:51.56%;
 }
 h1{
   margin-top:-50px;
 }
 .controls{
-  transform:scale(0.9);
-  margin-top:-50px;
+  transform:scale(0.9,1.0);
+  margin-top:-10px;
 }
  }
+@media screen and (max-width:380px){
+  .lightbar{
+    left:2.95%;
+  }
+  .body-logo img{
+    left:52.1%;
+  }
+}
+@media screen and (max-width: 340px){
+.body img{
+  top:-49.2px;
+  left:43.4%;
+}
+.lightbar{
+  top:-26.91px;
+  left:3.35%;
+}
+.luminous{
+  margin-top:25px;
+  transform:scale(0.80);
+}
+.body-logo img{
+  top:263.8px;
+  left:52.56%;
+}  
+.controls{
+  transform:scale(0.9,1.0);
+  margin-top:-20px;
+}
+}
