@@ -1,4 +1,6 @@
-*{
+*,
+*::before,
+*::after {
   box-sizing:border-box;/*全体をボーダーボックス指定*/
 }
 
@@ -6,7 +8,7 @@ body{
   font-family:"Hiragino Kaku Gothic ProN",snas-serif;/*フォントをゴシック体*/
   padding:0px 0px;
   margin:0px 0px;
-  background-color:#001;
+  background-color:#000;
 }
 
 /*本文のcss*/
@@ -38,6 +40,7 @@ header {
 
 .header-left img{
   width:128px;
+  max-width:100%;
   height:auto;
   margin-top:-12px;
   margin-left:10px;
@@ -779,6 +782,7 @@ ntainer .card .face.face1 .content{
   margin: 0 ;
   padding: 12px 0 -2px 0;
   color:#001;
+  opacity:0.8;
   text-align:left;
 }
 
@@ -1076,6 +1080,8 @@ width: 700px;
 	position: relative;
 }
 .animatos figure img{
+  max-width:100%;
+  height:auto;
   margin-top:-22px;
 }
 .animatos figure figcaption {
@@ -1088,12 +1094,11 @@ width: 700px;
 		opacity:0.8;
 }
 /*ペンライトアニメーション　css*/
-.main-rotation{
+.business-contents .main-rotation{
   background-color:#000;
   position:relative;
-  width:800px;
   height:380px;
-  margin-left:100px;
+  margin-left:40px;
   margin-top:-50px;
   cursor:pointer;
   /*background-image:url("https://i.imgur.com/NqyrvLg.gif");*/
@@ -1103,11 +1108,11 @@ width: 700px;
   background-repeat:no-repeat;
   background-position:center center;
 }
-.main-rotation h6{
-  color:#fff;
+.business-contents .main-rotation h6{
+  color:fff;
   margin-left:40px;
   margin-bottom:70px;
-  font-size:12px;
+  font-size:14px;
 }
 .penlight-rotation img{
   position:absolute;
@@ -1330,7 +1335,12 @@ width: 700px;
 /*タブレットresponsive*/
 /*--------------------------------*/
 /*--------------------------------*/
-@media(max-width:1070px){
+@media (orientation:portrait) and (max-width:1070px){
+  html,	body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
  .main{
   padding:0;
   margin:0;
@@ -1350,7 +1360,7 @@ width: 700px;
   width:1070px;
   max-width:100%;
   height:320px;
-  position:relative
+  position:relative;
 }
 #slideshow{
   transform:scale(0.9);
@@ -1362,7 +1372,7 @@ width: 700px;
 
 }
 .business-profile{
-  height:1050px;
+  height:1090px;
 }
 .stroke h1{
   font-size:14px;
@@ -1390,12 +1400,51 @@ nav   ul {
   margin-left:-50px;
 }
 }
+@media (orientation:portrait) and (max-width:800px){
+  #slideshow{
+    margin-top:50px;
+  }
+  .stroke{
+    margin-top:60px;
+  }
+  .business-contents{
+    height:2450px;
+  }
+  .main-rotation{
+    margin-left:-10px;
+  }
+}
+@media (orientation:landscape) and (max-width:1070px){
+  html,	body {
+		overflow-x: hidden;
+		overflow-y: scroll;
+		-webkit-overflow-scrolling: touch;
+	}
+  .business-profile{
+    height:1290px;
+  }
+  nav   ul {
+    margin-left:6px;
+  }
+  .business-contents{
+    height:2790px;
+  }
+  .example0001 table{
+    margin-left:-120px;
+  }
+  .animato{
+    margin-left:-150px;
+  }
+  .main-rotation{
+    margin-left:0px;
+  }
+}
 /*-----------------------------*/
 /**---------------------------**/
 /*スマホresponsive*/
 /**---------------------------**/
 /*-----------------------------*/
-@media(max-width:670px){
+@media (orientation:portrait) and (max-width:670px){
   html,	body {
 		overflow-x: hidden;
 		overflow-y: scroll;
@@ -1447,7 +1496,7 @@ nav   ul {
    margin-bottom:-120px;
 }
 .business-profile{
-  height:1720px;
+  height:1670px;
 }
 .stroke h1{
   font-size:14px;
@@ -1469,7 +1518,7 @@ nav   ul {
 .business-contents{
   margin:0;
   padding:0;
-  height:2250px;
+  height:2200px;
 }
 .container{
   background-image:url("https://i.imgur.com/mvfMHL4.jpg");
@@ -1530,14 +1579,14 @@ nav ul {
 }
 .animatos .piassa  h3{
   margin-top:10px;
-  margin-bottom:-5px;
+  margin-bottom:0px;
   margin-left:0px;
-  font-size:20px;
+  font-size:16px;
 }
 .animatos .piassa  p{
   margin-left:-30px;
   margin-bottom:-25px;
-  font-size:18px;
+  font-size:14px;
 }
 .animatos .modal-open img{
   margin-top:0px;
@@ -1548,11 +1597,11 @@ nav ul {
 }
 
 .animatos .modal-box{
-  top:710px;
+  top:770px;
   transform:scale(1.05);
 }
 .animatos .modal-box p{
- margin-left:20px; 
+ margin-left:20px;
   margin-top:10px;
   font-size:14px;
 }
@@ -1560,16 +1609,15 @@ nav ul {
   top:30px;
 }
 
- .main-rotation{
+ .business-contents .main-rotation{
     width:650px;
     max-width:100%;
     background-size:230px;
-    margin-left:0px;
-    margin-top:-150px;
+    margin-left:-15px;
   }
  .main-rotation .modal-open_1 img{
-  transform:scale(0.96);
-  margin-top:70px;
+  transform:scale(0.9);
+  margin-top:0px;
  }
 .main-rotation .modal-box{
   top:1130px;
@@ -1578,32 +1626,321 @@ nav ul {
 .main-rotation .modal-box p {
   font-size:14px;
 }
-  .main-rotation h6{
-    font-size:12px;
-    margin-left:350px;
-    margin-bottom:10px;
-  }
   .loader{
     transform:scale(0.82);
+    margin-top:-10px;
+  }
+.business-contents .main-rotation h6{
+ margin-left:-5px;
+ margin-bottom:-160px;
+ margin-top:-120px;
+ font-size:16px;
+}
+
+}
+
+@media (orientation:portrait) and (max-width:330px){
+  html,	body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+  .footer-right{
+    margin-left:70px;
+  }
+  #slideshow{
+    margin-top:70px;
+  }
+  .business-profile{
+    height:1620px;
+  }
+  .business-contents .container h1{
+    font-size:18px;
+  }
+  .example0001 table{
+    margin-left:-240px;
+  }
+  .animato{
+    margin-left:-180px;
+  }
+  .animatos .modal-open img{
+    transform:scale(0.57);
+  }
+  .business-contents .main-rotation{
+    margin-left:0px;
+  }
+
+}
+@media (orientation:landscape) and (max-width:830px){
+  html,	body {
+		overflow-x: hidden;
+		overflow-y: scroll;
+		-webkit-overflow-scrolling: touch;
+	}
+  header .rotate{
+    margin-left:180px;
+    margin-top:5px;
+    transform:scale(0.8);
+  }
+  .menu-icon{
+     margin-top:90px;
+  	}
+  #slideshow{
     margin-top:60px;
   }
-.main-rotation h6{
- margin-left:-53px;
- margin-bottom:25px;
- font-size:11px;
+  .business-profile p{
+    margin-bottom:-20px;
+  }
+  .business-profile{
+    height:2150px;
+  }
+  .card-container{
+    margin-left:70px;
+  }
+  .stroke{
+    margin-top:10px;
+    margin-bottom:-40px;
+  }
+  .stroke h1{
+    font-size:14px;
+  }
+  .stroke p{
+    font-size:12px;
+    display:inline-block;
+  }
+  .business-contents{
+    height:2300px;
+    width:700px;
+    max-width:100%;
+  }
+  .container{
+    width:700px;
+    max-width:100%;
+    margin:0 auto;
+    display:inline-block;
+  }
+  .click h2{
+    margin-top:-90px;
+    margin-bottom:-40px;
+  }
+  .business-contents .container h1{
+    white-space:nowrap;
+    font-size:16px;
+    width:600px;
+    max-width:100%;
+  }
+  .business-contents .container h5{
+    width:600px;
+    max-width:100%;
+    padding-top:0px;
+    margin-bottom:-10px;
+    font-size:13px;
+    font-weight:800;
+    text-align:left;
+  }
+  .business-contents .container h6{
+    font-size:15px;
+    margin-bottom:-50px;
+    margin-left:10px;
+  }
+  .business-contents .container p{
+    font-size:16px;
+    margin-left:10px;
+  }
+  .slider{
+    width:700px;
+  }
+  nav{
+    margin-left:-95px;
+  }
+  nav  ul {
+    transform:scale(0.68);
+  }
+  .slider img{
+    transform:scale(0.51);
+    margin-left:-280px;
+  }
+  .example0001 table{
+    margin-left:-255px;
+  }
+  .animato{
+    margin-left:-200px;
+  }
+  .animatos .modal-box{
+    transform:scale(0.6);
+  }
+  .animatos .modal-open img{
+    transform:scale(0.74);
+  }
+  .business-contents .animato h3{
+    font-size:14px;
+    margin-top:10px;
+    margin-left:210px;
+  }
+  .business-contents .animato p{
+    white-space:nowrap;
+    font-size:14px;
+    margin-bottom:-10px;
+    margin-left:210px;
+  }
+  .main-rotation{
+    margin-left:-90px;
+  }
+  .business-contents .main-rotation h6{
+    font-size:14px;
+    margin-top:-100px;
+    margin-bottom:10px;
+  }
+  .main-rotation .modal-box{
+    transform:scale(0.6);
+  }
+  .main-rotation .modal-open_1 img{
+   transform:scale(0.8);
+   margin-top:-20px;
+  }
+  .loader{
+    top:45px;
+  }
 }
-/*  .box-range-slider {
-  width: 250px;
-  height: 250px;
-  margin-left:20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-radius: 5px;
-  background-color: #ecf0f1;
-  font-family: arial;
-  font-size: 26px;
-  color: #2c3e50;
-}*/
+
+@media (orientation:landscape) and (max-width:700px){
+  html,	body {
+		overflow-x: hidden;
+		overflow-y: scroll;
+		-webkit-overflow-scrolling: touch;
+	}
+
+  .menu-icon{
+     margin-top:90px;
+  	}
+  #slideshow{
+    margin-top:10px;
+    }
+  .business-profile{
+    height:2290px;
+  }
+  .card-container{
+    margin-left:0px;
+  }
+  .card{
+    margin-bottom:60px;
+  }
+  .stroke{
+    margin-top:10px;
+    margin-bottom:-40px;
+  }
+  .stroke h1{
+    font-size:14px;
+  }
+  .stroke p{
+    font-size:12px;
+    display:inline-block;
+  }
+  .business-contents{
+    height:2350px;
+    width:700px;
+    max-width:100%;
+  }
+  .container{
+    width:700px;
+    max-width:100%;
+    margin:0 auto;
+    display:inline-block;
+  }
+  .click h2{
+    margin-top:-90px;
+    margin-bottom:-40px;
+  }
+  .business-contents .container h1{
+    white-space:nowrap;
+    font-size:16px;
+    width:600px;
+    max-width:100%;
+  }
+  .business-contents .container h5{
+    width:600px;
+    max-width:100%;
+    padding-top:0px;
+    margin-bottom:-10px;
+    font-size:13px;
+    font-weight:800;
+    text-align:left;
+  }
+  .business-contents .container h6{
+    font-size:15px;
+    margin-bottom:-50px;
+    margin-left:10px;
+  }
+  .business-contents .container p{
+    font-size:16px;
+    margin-left:10px;
+  }
+  .slider{
+    width:700px;
+  }
+  nav{
+    margin-left:-115px;
+  }
+  nav  ul {
+    transform:scale(0.68);
+  }
+  .slider img{
+    transform:scale(0.5);
+    margin-left:-400px;
+  }
+  .example0001 table{
+    margin-left:-300px;
+  }
+  .animato{
+    margin-left:-230px;
+  }
+  .animatos .modal-box{
+    transform:scale(0.6);
+  }
+  .animatos .modal-open img{
+    transform:scale(0.74);
+  }
+  .business-contents .animato h3{
+    font-size:14px;
+    margin-top:10px;
+    margin-left:210px;
+  }
+  .business-contents .animato p{
+    white-space:nowrap;
+    font-size:14px;
+    margin-bottom:-10px;
+    margin-left:210px;
+  }
+  .main-rotation{
+    margin-left:-100px;
+  }
+  .business-contents .main-rotation h6{
+    font-size:14px;
+    margin-top:-100px;
+    margin-bottom:10px;
+  }
+  .main-rotation .modal-box{
+    transform:scale(0.6);
+  }
+  .main-rotation .modal-open_1 img{
+   transform:scale(0.8);
+   margin-top:-20px;
+  }
+  .loader{
+    top:45px;
+  }
+}
+@media (orientation:landscape) and (max-width:610px){
+  html,	body {
+		overflow-x: hidden;
+		overflow-y: scroll;
+		-webkit-overflow-scrolling: touch;
+	}
+  .example0001 table{
+    margin-left:-330px;
+  }
+  .loader{
+    transform:scale(0.8);
+  }
+
 }
