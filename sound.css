@@ -1,16 +1,17 @@
-* {
-  box-sizing: border-box;
+*{
+  box-sizing:border-box;/*全体をボーダーボックス指定*/
 }
-
-
 body {
-  height: 200px;
-  width: 200px;
+
   margin: 0;
   background: #000000;
   /* for touch screen */
   touch-action: none;
   overflow: hidden;
+}
+.main{
+  height: 200px;
+  width: 200px;
 }
 .return a{
   color:#fff;
@@ -106,11 +107,10 @@ body {
   background:#000;
   z-index: -1;
 }
-
 #canvas {
   position: absolute;
-  left: 35.5%;
-  top: 145px;
+  top:20%;
+  left: 36.0%;
   width: 28%;
   height: 28%;
   animation: blinkAnimeS1 2s infinite alternate;
@@ -173,7 +173,7 @@ svg {
 
 }
 
-body:not(.safari) #start {
+.main:not(.safari) #start {
   background: #333;
   color: ##ffbacd;
   padding: 4px 8px;
@@ -189,7 +189,7 @@ body:not(.safari) #start {
  100%{ border-color: #e5c100 }
 }
 
-body:not(.safari) #start:hover {
+.main:not(.safari) #start:hover {
   color: #ffbacd;
   background: #333;
   -webkit-transition: 0.25s;
@@ -199,7 +199,7 @@ body:not(.safari) #start:hover {
   border: 0.5px #333 solid;
 }
 
-body:not(.safari) #start::after {
+.main:not(.safari) #start::after {
   content: "";
   position: absolute;
   top: 4px;
@@ -211,7 +211,7 @@ body:not(.safari) #start::after {
   border: 1px #da70d6 solid;
 }
 
-body:not(.safari) #start:hover::after {
+.main:not(.safari) #start:hover::after {
   content: "";
   position: absolute;
   top: 4px;
@@ -272,10 +272,13 @@ body:not(.safari) #start:hover::after {
 /**/
 /*rotation css*/
 #images{
+  width:800px;
+  max-width:100%;
+  height:auto;
   /*background-color:#000;*/
-  position:relative;
-  left:4.05%;
-  top:50px;
+  position:absolute;
+  left:1.8%;
+  top:35%;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
 }
@@ -1065,11 +1068,13 @@ body:not(.safari) #start:hover::after {
  p img {
   /*font-family: Serif;
   font-size:30px;*/
-  position: absolute;
-  top: 350px;
-  left: 329.4%;
   width:90px;
+  max-width:100%;
   height:auto;
+  margin-top:360px;
+  position: absolute;
+  top: 0px;
+  left: 82.3%;
   background-size:cover;
   -webkit-transform: translate(-50%,-50%) rotateX(68deg);
           transform: translate(-50%,-50%) rotateX(68deg);
@@ -1077,139 +1082,14 @@ body:not(.safari) #start:hover::after {
   z-index:-50;
 }
 
-/**/
-/*#drag-container, #spin-container {
-  position: relative;
-  top:110px;
-  left:0.5%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: auto;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  -webkit-transform: rotateX(-10deg);
-          transform: rotateX(-10deg);
-}
-#drag-container video{
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  line-height: 200px;
-  font-size: 50px;
-  text-align: center;
-  -webkit-box-shadow: 0 0 8px #fff;
-          box-shadow: 0 0 8px #fff;
-  -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0005);
-}
-#drag-container video{
-  display:none;
-}
-#drag-container img {
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  position: absolute;
-  left: 0;
-  top: 0;
-  height:140px;
-  width: auto;
-  line-height: 200px;
-  font-size: 50px;
-  text-align: center;
-  -webkit-box-shadow: 0 0 8px #fff;
-          box-shadow: 0 0 8px #fff;
-  -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0005);
-}
-#drag-container img:hover{
-  -webkit-box-shadow: 0 0 15px #fffd;
-          box-shadow: 0 0 15px #fffd;
-  -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0007);
-}
-#drag-container p {
-  font-family: Serif;
-  font-size:30px;
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  -webkit-transform: translate(-50%,-50%) rotateX(90deg);
-          transform: translate(-50%,-50%) rotateX(90deg);
-  color: #fff;
-}
-#ground {
-  width: 900px;
-  height: 900px;
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  -webkit-transform: translate(-50%,-50%) rotateX(90deg);
-          transform: translate(-50%,-50%) rotateX(90deg);
-  background: -webkit-radial-gradient(center center, farthest-side , #9993, transparent);
-}
-#music-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-@-webkit-keyframes spin {
-  from{
-    -webkit-transform: rotateY(0deg);
-            transform: rotateY(0deg);
-  } to{
-    -webkit-transform: rotateY(360deg);
-            transform: rotateY(360deg);
-  }
-}
-@keyframes spin {
-  from{
-    -webkit-transform: rotateY(0deg);
-            transform: rotateY(0deg);
-  } to{
-    -webkit-transform: rotateY(360deg);
-            transform: rotateY(360deg);
-  }
-}
-@-webkit-keyframes spinRevert {
-  from{
-    -webkit-transform: rotateY(360deg);
-            transform: rotateY(360deg);
-  } to{
-    -webkit-transform: rotateY(0deg);
-            transform: rotateY(0deg);
-  }
-}
-@keyframes spinRevert {
-  from{
-    -webkit-transform: rotateY(360deg);
-            transform: rotateY(360deg);
-  } to{
-    -webkit-transform: rotateY(0deg);
-            transform: rotateY(0deg);
-  }
-}
-*/
-
-/*body, html {
-    background-color: #000;
-    color: #fff;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}*/
-
 /*laser-beam css*/
 .laser-beam {
   position: absolute;
   left: 50%;
   bottom: 0;
   width: 3px;
-  height: 500%;
-
+  /*height: 500%;*/
+  height:500%;
   background: rgba(99, 195, 231, 0.6);
   -webkit-box-shadow: 0px 0px 15px 0px #63c3e7;
   -moz-box-shadow: 0px 0px 15px 0px #63c3e7;
@@ -1264,7 +1144,12 @@ body:not(.safari) #start:hover::after {
 }
 /*mirrorball css*/
 .disco-ball {
-  position: relative;
+  width:800px;
+  max-width:100%;
+  height:auto;
+  position: absolute;
+  top:5%;
+  left:47%;
   box-shadow: 0 0 30px black;
   display: -webkit-box;
   display: flex;
@@ -1275,9 +1160,6 @@ body:not(.safari) #start:hover::after {
   width: 65px;
   border-radius: 50%;
   overflow: hidden;
-  margin-top: -185px;
-  margin-left: 630px;
-  margin-right: auto;
   cursor: -webkit-grabbing;
   cursor: grabbing;
   /*transition: opacity 0.3s ease-in-out;
@@ -1581,98 +1463,514 @@ animation:rainbow-bg 4s infinite;
   background-color: transparent;
   opacity: 0;
 }
-#
 
-/*スマホ*/
+
 /*responsive*/
-@media(max-width:1000px){
+@media (orientation:portrait) and (max-width:1070px){
+  html,	body {
+		overflow-x: hidden;
+		overflow-y: scroll;
+		-webkit-overflow-scrolling: touch;
+	}
+  .main .disco-ball{
+    transform:scale(0.97);
+    top:50px;
+    left:47.0%;
+    margin-bottom:-90px;
+  }
+  #canvas{
+    height:24%;
+    width:57%;
+    margin-left:-13.0%;
+    margin-top:-30px;
+  }
   #images{
-    transform:scale(0.9);
-    left:-138%;
-    top:-29px;
+    transform:scale(0.98);
+    left:-12.4%;
+    top:36%;
   }
-  #soundpage {
-    transform:scale(0.95);
+  p img{
+    margin-left:-2%;
+    margin-top:385px;
   }
-  #overlay {
-    transform:scale(0.9);
-  }
-  p img {
-  top: 300px;
-  left: 329%;
+  .laser-beam{
+   bottom:450px;
 }
-.disco-ball {
- margin-top: -185px;
-  margin-left: 300px;
-  transform:scale(0.9);
- }
- #canvas{
-  left: 34.05%;
-  top: 110px;
-
- }
-
- #bubbleGen1{
-   position: absolute;
-   left:-10%;
-   bottom:0px;
-
- }
- #bubbleGen2{
-   position: absolute;
-   left:120%;
-   bottom:0px;
-
- }
+  .return a{
+    font-size:24px;
+  }
+}
+@media (orientation:portrait) and (max-width:870px){
+  html,	body {
+		overflow-x: hidden;
+		overflow-y: scroll;
+		-webkit-overflow-scrolling: touch;
+	}
+  .main .disco-ball{
+    transform:scale(0.76);
+    top:50px;
+    left:47.0%;
+    margin-bottom:-90px;
+  }
+  #canvas{
+    height:24%;
+    width:47%;
+    margin-left:-10.0%;
+    margin-top:30px;
+  }
+  #images{
+    transform:scale(0.78);
+    left:-22.9%;
+    top:0px;
+  }
+  p img{
+    margin-left:-2%;
+    margin-top:85px;
+  }
+  .laser-beam{
+   bottom:250px;
+}
+  .return a{
+    font-size:16px;
+  }
+}
+@media (orientation:portrait) and (max-width:780px){
+  html,	body {
+		overflow-x: hidden;
+		overflow-y: scroll;
+		-webkit-overflow-scrolling: touch;
+	}
+  #images{
+    transform:scale(0.98);
+    left:-31.4%;
+    top:36%;
+  }
+  p img{
+    margin-left:-1.8%;
+    margin-top:385px;
+  }
+  .laser-beam{
+   bottom:220px;
+}
+}
+@media (orientation:portrait) and (max-width:455px){
+  html,	body {
+		overflow-x: hidden;
+		overflow-y: scroll;
+		-webkit-overflow-scrolling: touch;
+	}
+  .main .disco-ball{
+    transform:scale(0.74);
+    top:50px;
+    left:45.0%;
+    margin-bottom:-90px;
+  }
+  #canvas{
+    height:24%;
+    width:47%;
+    margin-left:-10.0%;
+    margin-top:30px;
+  }
+  #images{
+    transform:scale(0.68);
+    left:-66.4%;
+    top:36%;
+  }
+  p img{
+    margin-left:64.8%;
+    margin-top:385px;
+  }
+  .laser-beam{
+   bottom:80px;
+}
 
 }
-@media(max-width:670px){
+@media (orientation:portrait) and (max-width:420px){
+  html,	body {
+		overflow-x: hidden;
+		overflow-y: scroll;
+		-webkit-overflow-scrolling: touch;
+	}
+  .main{
+    width:420px;
+    max-width:100%;
+    height:auto;
+  }
+  .main .disco-ball{
+    transform:scale(0.71);
+    top:50px;
+    left:43.0%;
+    margin-bottom:-60px;
+  }
+  #canvas{
+    height:20%;
+    width:60%;
+    margin-left:-11.6vw;
+  }
+  #images{
+    transform:scale(0.81);
+    left:-87.0%;
+    top:30%;
+  }
+  p img{
+    margin-left:80vw;
+    margin-top:373px;
+  }
+  #bubbleGen1{
+    bottom:150px;
+    left:-10%;
+  }
+  #bubbleGen2{
+    bottom:20px;
+    left:60%;
+  }
+    .laser-beam{
+    bottom:170px;
+  }
+  .return a{
+    transform:scale(0.6);
+    top:200px;
+    left:2.5%;
+  }
+}
+@media (orientation:portrait) and (max-width:380px){
+  html,	body {
+		overflow-x: hidden;
+		overflow-y: scroll;
+		-webkit-overflow-scrolling: touch;
+	}
+  .main{
+    width:380px;
+    max-width:100%;
+    height:auto;
+  }
+  .main .disco-ball{
+    top:40px;
+    left:44.0%;
+    margin-bottom:-20px;
+  }
+  #canvas{
+    height:19%;
+    width:57%;
+  }
   #images{
     transform:scale(0.75);
-    left:-182.9%;
-    top:0px;
-
+    left:-89%;
+    top:270px;
   }
-  #soundpage {
-    transform:scale(0.8);
+  p img{
+    margin-left:89vw;
+    margin-top:350px;
   }
-  #overlay {
-    transform:scale(0.7);
-    margin-left:-10px;
-  }
-  body:not(.safari) #start{
-    transform:scale(0.7);
-
-  }
-   p img {
-  top: 298px;
-  left:330%;
+  .laser-beam{
+  bottom:80px;
 }
- /*#drag-container img {
-  position: absolute;
-  left: 4%;
-  top: 15px;
-  }*/
- .disco-ball {
-  margin-top: -180px;
-  margin-left:140px;
-  transform:scale(0.7);
- }
- #canvas{
-  left: 26%;
-  top: 120px;
-  width: 60%;
-  height: 28%;
- }
-
- .bubble-show #bubbleGen1{
-   left:40%;
+}
+@media (orientation:portrait) and (max-width:360px){
+  #images{
+    left:-96%;
+  }
+  p img{
+    margin-left:93vw;
+  }
+}
+@media (orientation:portrait) and (max-width:325px){
+  html,	body {
+		overflow-x: hidden;
+		overflow-y: scroll;
+		-webkit-overflow-scrolling: touch;
+	}
+  #canvas{
+    height:23%;
+    width:57%;
+    margin-left:1%;
+    margin-top:30px;
+  }
+  .main .disco-ball{
+    transform:scale(0.76);
+    top:50px;
+    left:57.0%;
+    margin-bottom:0px;
+  }
+  #images{
+    transform:scale(0.75);
+    left:-101%;
+  }
+  .laser-beam{
    bottom:0px;
- }
- .bubble-show #bubbleGen2{
-   left:92%;
-   bottom:0px;
-
- }
-
+   left:60%;
+}
+p img{
+  margin-left:119vw;
+  margin-top:360px;
+}
+}
+@media (orientation:portrait) and (max-width:285px){
+  html,	body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+  .main .disco-ball{
+    transform:scale(0.69);
+    top:40px;
+    left:45.5%;
+    margin-bottom:0px;
+  }
+  #canvas{
+    height:18%;
+    width:57%;
+    margin-left:-9.5%;
+    margin-top:10px;
+  }
+  #images{
+    transform:scale(0.7);
+    left:-130%;
+    top:200px;
+  }
+  p img{
+    margin-left:155vw;
+    margin-top:400px;
+  }
+  .laser-beam{
+   bottom:150px;
+   left:45%;
+}
+#soundpage{
+  transform:scale(0.8);
+}
+}
+@media (orientation:landscape) and (max-width:1080px){
+  html,	body {
+		overflow-x: hidden;
+		overflow-y: scroll;
+		-webkit-overflow-scrolling: touch;
+	}
+  #canvas{
+    height:21%;
+    width:36%;
+    margin-left:-3%;
+    margin-top:-40px;
+  }
+  #soundpage,#overlay{
+    transform:scale(0.81);
+  }
+  .main .disco-ball{
+    transform:scale(0.79);
+    top:20px;
+    left:49.0%;
+    margin-bottom:0px;
+  }
+  #images{
+    transform:scale(0.91);
+    top:160px;
+    left:-10%;
+  }
+  .laser-beam{
+  bottom:150px;
+}
+p img{
+  margin-left:-1vw;
+  margin-top:380px;
+}
+.return a{
+  font-size:22px;
+}
+}
+@media (orientation:landscape) and (max-width:880px){
+  html,	body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+  #canvas{
+    height:25%;
+    width:30%;
+    margin-left:0%;
+    margin-top:0px;
+  }
+  #soundpage,#overlay{
+    transform:scale(0.81);
+  }
+  .main .disco-ball{
+    transform:scale(0.66);
+    top:10px;
+    left:47.4%;
+    margin-bottom:0px;
+  }
+  #images{
+    transform:scale(0.73);
+    top:90px;
+    left:-21.0%;
+  }
+  .laser-beam{
+  bottom:0px;
+}
+p img{
+  margin-left:-2vw;
+  margin-top:360px;
+}
+.return a{
+  font-size:14px;
+}
+}
+@media (orientation:landscape) and (max-width:740px){
+  html,	body {
+		overflow-x: hidden;
+		overflow-y: scroll;
+		-webkit-overflow-scrolling: touch;
+	}
+  #canvas{
+    height:27%;
+    width:34%;
+    margin-left:-3%;
+    margin-top:-10px;
+  }
+  #soundpage,#overlay{
+    transform:scale(0.76);
+  }
+  .main .disco-ball{
+    transform:scale(0.71);
+    top:0px;
+    left:46.0%;
+    margin-bottom:10px;
+  }
+  #images{
+    transform:scale(0.75);
+    top:85px;
+    left:-30%;
+  }
+  .laser-beam{
+  bottom:40px;
+}
+p img{
+  margin-left:9vw;
+  margin-top:355px;
+}
+.return a{
+  font-size:22px;
+}
+}
+@media (orientation:landscape) and (max-width:680px){
+  html,	body {
+		overflow-x: hidden;
+		overflow-y: scroll;
+		-webkit-overflow-scrolling: touch;
+	}
+  #canvas{
+    height:20%;
+    width:28%;
+    margin-left:-10%;
+    margin-top:-20px;
+  }
+  #soundpage,#overlay{
+    transform:scale(0.66);
+  }
+  .main .disco-ball{
+    transform:scale(0.51);
+    top:0px;
+    left:34.0%;
+    margin-bottom:10px;
+  }
+  #images{
+    transform:scale(0.46);
+    top:69px;
+    left:-32.9%;
+  }
+  .laser-beam{
+  bottom:100px;
+  left:40%;
+}
+p img{
+  margin-left:14vw;
+  margin-top:370px;
+}
+.return a{
+  font-size:16px;
+  transform:scale(0.6);
+  top:150px;
+  left:2.5%;
+}
+}
+@media (orientation:landscape) and (max-width:605px){
+  html,	body {
+		overflow-x: hidden;
+		overflow-y: scroll;
+		-webkit-overflow-scrolling: touch;
+	}
+  #canvas{
+    height:21%;
+    width:32%;
+    margin-left:-2%;
+    margin-top:-5px;
+  }
+  #soundpage,#overlay{
+    transform:scale(0.72);
+  }
+  .main .disco-ball{
+    transform:scale(0.65);
+    top:0px;
+    left:45.0%;
+    margin-bottom:10px;
+  }
+  #images{
+    transform:scale(0.7);
+    top:140px;
+    left:-39.7%;
+  }
+  .laser-beam{
+  bottom:10px;
+  left:49%;
+}
+p img{
+  margin-left:22.5vw;
+  margin-top:380px;
+}
+.return a{
+  font-size:20px;
+  transform:scale(0.6);
+  top:180px;
+  left:2.5%;
+}
+}
+@media (orientation:landscape) and (max-width:580px){
+  html,	body {
+		overflow-x: hidden;
+		overflow-y: scroll;
+		-webkit-overflow-scrolling: touch;
+	}
+  #canvas{
+    height:21%;
+    width:32%;
+    margin-left:-2%;
+    margin-top:-5px;
+  }
+  #soundpage,#overlay{
+    transform:scale(0.6);
+  }
+  .main .disco-ball{
+    transform:scale(0.55);
+    top:0px;
+    left:45.0%;
+    margin-bottom:10px;
+  }
+  #images{
+    transform:scale(0.55);
+    top:70px;
+    left:-36.2%;
+  }
+  .laser-beam{
+  bottom:10px;
+  left:10%;
+}
+p img{
+  margin-left:31vw;
+  margin-top:390px;
+}
+.return a{
+  font-size:16px;
+  transform:scale(0.6);
+  top:150px;
+  left:2.5%;
+}
 }
