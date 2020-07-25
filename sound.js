@@ -1,4 +1,3 @@
-/*bubble js*/
 $(function(){
 const bubbleGen = document.querySelector( "#bubbleGen1" );
 const colorful = document.querySelector( "#colorfu" );
