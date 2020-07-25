@@ -1,20 +1,25 @@
-*{
+*,
+*::before,
+*::after {
   box-sizing:border-box;/*全体をボーダーボックス指定*/
+}
+html {
+  font-size: calc(100vw / 44);
 }
 
 body{
   font-family:"Hiragino Kaku Gothic ProN",snas-serif;/*フォントをゴシック体*/
   padding:0px 0px;
   margin:0px 0px;
-  background-color:#111;
+  background-color:#000;
 }
 
 /*本文のcss*/
 .main{
-  padding:90px 250px;
+  padding-left:340px;
   width:100%;
 }
-.containers{
+.contact-form container{
   max-width:1200px;
   width:100%;
   margin:0px auto;
@@ -39,13 +44,13 @@ header {
 .header-left img{
   width:128px;
   height:auto;
-  margin-top:-12px;
+  margin-top:-20px;
   margin-left:10px;
 
 }
 .header-left p{
   margin-left:20px;
-  margin-top:5px;
+  margin-top:-3px;
   font-size:12px;
   color:#fff;
   opacity:0.8;
@@ -68,16 +73,16 @@ header {
   padding: 2.6vh 1.54vw;
   border-left: 1px solid #eee;
   color:#fff;
-  opacity:0.95;
+  opacity:0.9;
   text-decoration: none;
 }
 .header-right a{
   width:140px;
+  font-size:15px;
 }
 .header-right li :hover,
 header .menu-btn:hover {
   background-color: rgba(250,245,245,0.8);
-	color:#111;
 }
 /*HOME btn css*/
 #btn1,#btn2,#btn3{
@@ -170,7 +175,7 @@ header .menu-btn:hover {
   height: 100%;
   background-color: rgba(250,245,245,0.4);
   color:#fff;
-  transition: all 0.4s;
+  transition: all .35s;
 }
 
 #btn3:hover{
@@ -186,11 +191,9 @@ header .menu-btn:hover {
 	display: none;
 	position: absolute;
 	top: 60px; /* the height of the main nav */
-  background:#ddd;
 }
 .header-right ul li:hover > ul {
 	display:inherit;
-
 }
 .header-right ul ul li {
 	width:140px;
@@ -203,7 +206,7 @@ header .menu-btn:hover {
   font-weight:800;
   white-space:nowrap;
   padding-left:-5px;
-  color:#444;
+  color:#ddd;
 }
 /*----------------*/
 /* hamburger-menu */
@@ -288,7 +291,7 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
 /*responsive*/
 
 /* 48em = 768px */
-@media (min-width: 48em) {
+@media (min-width: 670px) {
   .header-left{
     clear:both;
   }
@@ -308,41 +311,40 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   }
 }
 
-
 /*----------------*/
 /* トップに戻るcss*/
 /*----------------*/
-#page_top{
+#pagetop{
   width: 50px;
   height: 50px;
   position: fixed;
-  right: 0;
-  bottom: 0;
-  background-color: #000011;
-  opacity: 0.6;
+  right: 20px;
+  bottom: 15px;
+  background: #000;
+  opacity: 0.7;
 }
-#page_top a{
+#pagetop a{
   position: relative;
   display: block;
   width: 50px;
   height: 50px;
   text-decoration: none;
+  text-align: center;
 }
-#page_top a::before{
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 900;
+#pagetop a::before{
+  font-family: "Font Awesome 5 Free";
   content: '\f102';
-  font-size: 25px;
+  font-weight: 900;
+  font-size: 30px;
   color: #fff;
   position: absolute;
   width: 25px;
   height: 25px;
-  top: 0;
-  bottom: 0;
+  top: 5px;
+  bottom: 10px;
   right: 0;
   left: 0;
   margin: auto;
-  text-align: center;
 }
 /*トップ戻る終了*/
 /*----------------*/
@@ -354,12 +356,12 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
 
   position: absolute;
   top:0.4vw;
-  left:50vw;
+  left:48vw;
   transform-origin: center;
   /*transform-style: preserve-3d;*/
 }
 .rotate .front {
-  background-image:url("rotation-logo.png ");
+  background-image:url("rotation-logo.png");
   background-size:22px 22px;
   background-position:center center;
   background-repeat:no-repeat;
@@ -476,249 +478,16 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
     transform: rotateY(360deg);
   }
 }
-/*---------------*/
-/* pageflipcss  */
-/*---------------*/
-#all
-{
-  width:680px;
-  margin-top: 150px;
-  margin-left: 0;
- /* margin-right: auto;*/
-}
-#page-flip
-{
-
-  position: absolute;
-  top:70px;
-  left:40%;
-  width: 300px;
-  height: 400px;
-  /*overflow: hidden;*/
-}
-#r1
-{
-  position: absolute;
-  z-index: 2;
-  transform-origin: 1305px 502px;
-  transform: translate(-1020px, -500px) rotate(-32deg);
-  transition-property: transform, transform-origin;
-  transition-duration: 1s;
-}
-#p1
-{
-  width: 1285px;
-  height: 1388px;
-  overflow: hidden;
-}
-
-#p1 > div
-{
-  transform-origin: 285px 0;
-  transform: translate(1020px, 500px) rotate(32deg);
-  transition-property: transform, transform-origin;
-  transition-duration: 1s;
-  background-color:#fff;
-  box-shadow: 1px 1px 11px rgba(0, 0, 0, .5);
-  width: 285px;
-  height: 308px;
-  background-image: url("images.png");
-  background-size:140px 130px;
-  background-repeat:no-repeat;
-  background-position:center center;
-}
-#p1 > div > div
-{
-  width: 10px;
-  height: 300px;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .25)), to(rgba(0,0,0,0)));
-}
-
-#p2 > div
-{
-  width: 285px;
-  height: 300px;
-  box-shadow: 1px 1px 11px rgba(0, 0, 0, .5);
-  position: absolute;
-  z-index: 1;
-  background-color:#fff;
-  background-image: url("mask.png");
-  background-size: 115px 115px;
-  background-repeat:no-repeat;
-  background-position:center center;
-
-}
-#r3
-{
-  transform-origin: 1315px 500px;
-  transform: translate(-1030px, -500px) rotate(-32deg);
-  transition-property: transform, transform-origin;
-  transition-duration: 1s;
-  position: absolute;
-  z-index: 2;
-}
-
-#s3
-{
-  transform-origin: 70px 500px;
-  transform: translate(215px, -500px) rotate(-32deg) translate(40px, 0);
-  transition-property: transform, transform-origin;
-  transition-duration: 1s;
-  position: absolute;
-  z-index: 1;
-}
-#page-flip:hover #s3
-{
-  transform-origin: 325px 500px;
-  transform: translate(-40px, -500px) rotate(0deg) translate(40px, 0);
-}
-#sp3
-{
-  width: 25px;
-  height: 1000px;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .25)), to(rgba(0,0,0,0)));
-  transition-property: width;
-  transition-duration: 1s;
-  overflow: hidden;
-}
-#page-flip:hover #sp3
-{
-  width: 11px;
-}
-.s
-{
-  width: 285px;
-  height: 300px;
-  position: absolute;
-  overflow: hidden;
-  z-index: 3;
-}
-#s2
-{
-  transform-origin: 45px 500px;
-  transform: translate(240px, -500px) rotate(-32deg);
-  transition-property: transform, transform-origin;
-  transition-duration: 1s;
-  position: absolute;
-}
-#sp2
-{
-  width: 15px;
-  height: 1000px;
-  background: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, .18)), to(rgba(0,0,0,0)));
-  overflow: hidden;
-}
-#s4
-{
-  opacity: 1;
-  transition-duration: 0.5s;
-}
-#page-flip:hover #s4
-{
-  opacity: 0;
-}
-#page-flip:hover #s2
-{
-  transform-origin: 300px 500px;
-  transform: translate(-15px, -500px) rotate(0deg);
-}
-#p3
-{
-  width: 1285px;
-  height: 1388px;
-  overflow: hidden;
-}
-#p3 > div
-{
-  transform-origin: 0 0;
-  transform: translate(1255px, 500px) rotate(-32deg);
-  transition-property: transform,transform-origin;
-  transition-duration: 1s;
-  box-shadow: 1px 1px 11px rgba(0, 0, 0, .5);
-  width: 285px;
-  height: 300px;
-  background-color:#fff;
-  background-image: url("wash_hand.png");
-  background-size:115px 115px;
-  background-repeat:no-repeat;
-  background-position:center center;
-  overflow: hidden;
-}
-#p3 > div > div
-{
-  width: 9px;
-  height: 500px;
-  float: right;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(rgba(0,0,0,.20)));
-}
-
-#page-flip:hover #r1
-{
-  transform-origin: 1570px 500px;
-  transform: translate(-1285px, -500px) rotate(0deg);
-}
-#page-flip:hover #p1 > div
-{
-  transform-origin: 285px 0;
-  transform: translate(1285px, 500px) rotate(0deg);
-}
-#page-flip:hover #r3
-{
-  transform-origin: 1570px 500px;
-  transform: translate(-1285px, -500px) rotate(0deg);
-}
-#page-flip:hover #p3 > div
-{
-  transform-origin: 0 0;
-  transform: translate(1000px, 500px) rotate(0deg);
-}
-/*page-flipの表示部*/
-.top-wrapper {
-   position: relative;
-   margin-top:19vh;
-   height:58.6vh;
-   width:100%;
-}
-
-/*contact css*/
-
-.contact-container{
-  color:#ddd;
-  font-size:16px;
-}
-input{
-  font-size:16px;
-  padding:8px 12px;
-  width:400px;
-}
-textarea{
-  font-size:18px;
-  padding:8px 12px;
-  width:800px;
-  height:330px;
-}
-table tr{
-  color:#ddd;
-}
-label #item1{
- margin-left:-140px;
- margin-right:-160px;
-}
-label #item2{
- margin-left:-140px;
- margin-right:-160px;
-}
-
-
 /*-------------*/
 /*footerのcss*/
 /*-------------*/
 footer{
   clear:both;
   width:100%;
-  height:75px;
+  height:95px;
   background-color:#000;
   opacity:0.9;
+  z-index:2;
 }
 .footer-left
 {
@@ -730,13 +499,15 @@ footer{
 }
 .footer-right{
   float:right;
+  font-size:14px;
   margin-right:20px;
+  margin-top:-10px;
   line-height:75px;
   color:#fff;
 }
 .footer-right a{
   padding-right:10px;
-  font-size:14px;
+
   text-decoration:none;
   color:#fff;
   opacity:0.8;
@@ -747,226 +518,177 @@ footer{
   text-decoration:underline;
 }
 
-/*-----------------------------*/
-/**---------------------------**/
-/*スマホresponsive*/
-/**---------------------------**/
-/*-----------------------------*/
 
-@media(max-width:670px){
-  .main{
-  padding:0 0;
-  width:100%;
-  clear:both;
-}
-/*.header-left p{
-  color:#00ff00;
-}*/
-.header-right ul {
-   /*overflow: hidden;*/
-}
-.container{
-  margin:0 ;
-}
-.heading{
-  margin-left:-20px;
-  display:block;
-}
-.heading h1{
-  font-size:28px;
-}
-.heading h3{
-  font-size:18px;
-}
-.company-profile h2{
-  font-size:18px;
-}
-.header-right ul {
+/*contact css*/
+/*typewriter cxx*/
+ .top-message{
+   display: flex;
+   /*position: absolute;
+   left: 35%;*/
+   text-align:center;
+   margin-top: 120px;
+  }
+ .top-message h1{
+   margin:0 auto;
+   font-size:0.89rem;
+   font-family:"游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+   color:#fff;
+   border-right: 3px solid #e67e22;
    overflow: hidden;
-}
-.company-profile .news{
-  max-width:300px;
-  width:100%;
-  margin-left:-10px;
-  font-size:12px;
-}
-#all
-{
-  width:680px;
-  margin-top: 150px;
-  margin-left: 0;
- /* margin-right: auto;*/
-}
-#page-flip
-{
-  display:block;
-  position: absolute;
-  top:0;
-  left:-35%;
-  width: 300px;
-  height: 400px;
-  /*overflow: hidden;*/
-}
+   text-transform: capitalize;
+   white-space: nowrap;
+   animation: typing 7s steps(30) infinite ;
+   }
 
-.message-content .content {
-  width:320px;
-  padding-left:5px;
+  @keyframes typing{
+   0%{width: 0%;}
+   50%{width: 100%;}
+   75%{width: 100%;}
+   100%{width: 0%;}
+   }
+/*本文*/
+.contact-container{
+  margin-top:80px;
+  height:2150px;
 }
-.message-wrapper{
-  margin-top:110px;
-  /*background-color:#000;*/
-  background-image:url("kawa.jpg");
-  background-size:320px auto;
-  height:900px;
+.contact-container h3{
+  font-size:0.7rem;
+  font-family:"游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;;
+  color:#000;
+  text-shadow:
+    #fff 2px 0px 2px, #fff -2px 0px 2px,
+    #fff 0px -2px 2px, #fff -2px 0px 2px,
+    #fff 2px 2px 2px, #fff -2px 2px 2px,
+    #fff 2px -2px 2px, #fff -2px -2px 2px,
+    #fff 1px 2px 2px, #fff -1px 2px 2px,
+    #fff 1px -2px 2px, #fff -1px -2px 2px,
+    #fff 2px 1px 2px, #fff -2px 1px 2px,
+    #fff 2px -1px 2px, #fff -2px -1px 2px,
+    #fff 1px 1px 2px, #fff -1px 1px 2px,
+    #fff 1px -1px 2px, #fff -1px -1px 2px;
+  margin-top:15px;
+  margin-bottom:15px;
+  text-decoration:underline;
 }
-.company-wrapper{
-  background-image:url("GODBLADE_DEMO.jpg");
-  background-size:320px auto;
-  height:1150px;
+.contact-container p{
+   color:#ffff00;
+   font-weight:400;
+   padding:-10x 0;
+   font-size:0.6rem;
 }
-#info table{
-  max-width:300px;
-  width:100%;
-  margin-left:20px;
-  font-size:12px;
-}
-#info table th{
-  width:80px;
-}
-.content p{
-  padding:10px 10px;
-  font-size:12px;
-}
-.content ul{
-  margin:11px 0;
-  font-size:95%;
-  margin-left:50px;
-}
-.content li{
-   font-size:11px;
-}
-#info0003{
-  font-size:16px;
-  margin-top:30px;
+.contact-container h4{
+  color:#ffff00;
+  font-size:0.6rem;
+  font-weight:900;
   margin-bottom:10px;
 }
 
-.map p{
-  float:none;
-  width:280px;
-  height:auto;
+@media all and (max-width:1070px){
+  html,	body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 }
-.remark{
-  float:none;
-  width:280px;
-  display:block;
-  margin-top:20px;
-  margin-left:25px;
-}
-.remark h6{
-  font-weight:normal;
-  line-height:2.2;
-  font-size:12px;
-  color:#fff;
-  opacity:0.8;
-}
-.remark h4{
-  color:#fff;
-  font-size:14px;
-}
-.footer-left
-{
-  width:320px;
-  text-align:left;
-  font-size:12px;
-}
-.footer-right{
- line-height:1.8;
- margin-left:5px;
- font-size:12px;
- margin-top:20px;
- margin-bottom:40px;
-}
-.rotate {
-  display:none;
-}
-}
-/*--------------------------------*/
-/*--------------------------------*/
-/*タブレットresponsive*/
-/*--------------------------------*/
-/*--------------------------------*/
-@media(max-width:960px){
-  .header-left p{
-  color:#00ff00;
-  }
   .main{
-  padding:0 0;
-  width:100%;
-  clear:both;
+    text-align:center;
+    padding:0;
+  }
+  .rotate{
+  left:106%;
 }
-.container{
-  margin:0 ;
+.header-left{
+  transform:scale(0.87);
+  margin-left:-60px;
 }
-.message-wrapper,.company-wrapper{
-  background-size:cover;
+.header-right{
+  transform:scale(0.87);
 }
-.masseg-wrapper{
-  height:1880px;
 }
-.company-wrapper{
-  height:2550px;
+@media all and (max-width:830px){
+  .header-right{
+    margin-top:-15px;
+    margin-right:0px;
+  }
+  .top-message{
+    margin-top:150px;;
+  }
+  .top-message h1{
+    font-size:22px;
+  }
 }
-.message-content{
-  width:600px;
+@media all and (max-width:670px){
+  html,	body {
+		overflow-x: hidden;
+		overflow-y: scroll;
+		-webkit-overflow-scrolling: touch;
+	}
+.main{
+  padding:0;
+  margin:0;
+ }
+  .header-left{
+  transform:scale(0.83);
+  margin-left:-65px;
 }
-#info{
-  width:600px;
+.rotate{
+   display:none;
+   left:56%;
 }
-.rotate {
-  width: 60px;
-  height: 50px;
-  position: absolute;
-  top:0.4vw;
-  left:65vw;
-  transform-origin: center;
-  /*transform-style: preserve-3d;*/
+.menu-icon{
+   margin-top:95px;
+	}
+  footer{
+    float:none;
+    transform:scale(0.93);
+  }
+  footer .footer-right{
+    transform:scale(0.85);
+    margin-top:-10px;
+    margin-left:10px;
+    margin-bottom:20px;
+  }
+  footer .footer-right small{
+    display:block;
+    margin-top:-45px;
+    white-space:nowrap;
+  }
+  .top-message{
+    margin-top:130px;;
+  }
+  .top-message h1{
+    font-size:20px;
+  }
 }
-#all
-{
-  width:780px;
-  margin-top: 150px;
-  margin-left: 0;
- /* margin-right: auto;*/
+@media all and (max-width:430px){
+  html,	body {
+		overflow-x: hidden;
+		overflow-y: scroll;
+		-webkit-overflow-scrolling: touch;
+	}
+.main{
+  padding:0;
+  margin:0;
+ }
+  .menu-icon{
+   margin-top:65px;
+  	}
+  .header-left img{
+    margin-top:-12px;
+  }
+  .header-left p{
+    margin-top:5px;
+  }
+   .top-message h1{
+     font-size:16px;
+   }
 }
-#page-flip
-{
-  position: absolute;
-  padding: 40px 0px 40px 140px;
-}
-#info table{
-  width:560px;
-}
-.company-profile .news{
-  float:none;
-  display:block;
-  width:560px;
-  height:280px;
-  margin-left:20px;
-}
-
-.map p {
-  float:none;
-  text-align:center;
-}
-.remark{
-  float:none;
-  width:350px;
-  display:block;
-  padding-left:15px;
-}
- header ul {
-  /*overflow: hidden;*/
-}
-
+@media all and (max-width:380px){
+  html,	body {
+		overflow-x: hidden;
+		overflow-y: scroll;
+		-webkit-overflow-scrolling: touch;
+	}
+  .top-message h1{
+    font-size:13px;
+  }
 }
