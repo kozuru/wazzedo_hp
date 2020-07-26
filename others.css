@@ -1,3 +1,6 @@
+*{
+  box-sizing:border-box;/*全体をボーダーボックス指定*/
+}
 body {
   margin: 0;
   font-family: Nunito, Arial, sans-serif;
@@ -152,8 +155,8 @@ table{
   left:50.18%;
   }
   .container{
-     transform:scale(0.95);
-     top:455px;
+     transform:scale(0.97);
+     top:445px;
      left:11.3%;
 
        }
@@ -180,7 +183,7 @@ table{
   }
   .wrapper{
     top:116.4px;
-    left:49.22%;
+    left:49.42%;
     z-index:2;
   }
   .j{
@@ -192,13 +195,53 @@ table{
   left:50.65%;
   }
   .container{
-     transform:scale(0.58);
-     top:263px;
+     transform:scale(0.75);
+     top:275px;
      left:6.9%;
 
        }
   table{
-    transform:scale(0.82);
+    transform:scale(0.90);
+    top:-5px;
+    left:20.0%;
+  }
+
+  .return a{
+    font-size:16px;
+    top:220px;
+    left:80%;
+  }
+}
+@media all and (max-width:770px){
+  html,	body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+  .wrapper,.j,.body-logo img {
+  transform:scale(0.61);
+  }
+  .wrapper{
+    top:116.4px;
+    left:49.25%;
+    z-index:2;
+  }
+  .j{
+    top:88px;
+  left:48.723%;
+  }
+  .body-logo img {
+    top:234px;
+  left:50.65%;
+  }
+  .container{
+     transform:scale(0.79);
+     top:280px;
+     left:4.9%;
+
+       }
+  table{
+    transform:scale(0.90);
     top:-5px;
     left:20.0%;
   }
@@ -220,7 +263,7 @@ table{
   }
   .wrapper{
     top:116.4px;
-    left:49.32%;
+    left:49.30%;
     z-index:2;
   }
   .j{
@@ -271,12 +314,12 @@ table{
   left:51.1%;
   }
   .container{
-     transform:scale(0.485);
-     top:205px;
-     left:-1%;
+     transform:scale(0.55);
+     top:220px;
+     left:-3.6%;
   }
   table{
-    transform:scale(0.64);
+    transform:scale(0.74);
     top:-19px;
   left:14.2%;
   }
@@ -306,9 +349,9 @@ table{
   left:51.65%;
   }
   .container{
-     transform:scale(0.485);
-     top:205px;
-     left:-5%;
+     transform:scale(0.54);
+     top:225px;
+     left:-8%;
   }
   table{
     transform:scale(0.64);
@@ -319,6 +362,42 @@ table{
     font-size:11px;
   }
 }
+@media all and (max-width:455px){
+  html,	body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+  .wrapper,.j,.body-logo img {
+  transform:scale(0.58);
+  }
+  .wrapper{
+   top:92.0px;
+  left:49.52%;
+  }
+  .j{
+    top:60.7px;
+  left:48.723%;
+  }
+  .body-logo img {
+    top:202px;
+  left:51.65%;
+  }
+  .container{
+     transform:scale(0.495);
+     top:210px;
+     left:-23%;
+  }
+  table{
+    transform:scale(0.65);
+    top:-19px;
+  left:-1.9%;
+  }
+  .return a{
+    font-size:11px;
+  }
+}
+
 @media all and (max-width:420px){
   html,	body {
     overflow-x: hidden;
@@ -330,7 +409,7 @@ table{
   }
   .wrapper{
    top:91.7px;
-  left:49.60%;
+  left:49.71%;
   }
   .j{
     top:60.7px;
@@ -341,18 +420,54 @@ table{
   left:52.46%;
   }
   .container{
-     transform:scale(0.488);
-     top:215px;
-     left:-33.0%;
+     transform:scale(0.54);
+     top:220px;
+     left:-30.5%;
   }
   table{
-    transform:scale(0.64);
-    top:-10px;
-  left:-8.2%;
+    transform:scale(0.67);
+    top:-6px;
+  left:-12.2%;
   }
   .return a{
-    font-size:11px;
-    top:90px;
+    font-size:13px;
+    top:210px;
+  }
+}
+@media all and (max-width:405px){
+  html,	body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+  .wrapper,.j,.body-logo img {
+  transform:scale(0.58);
+  }
+  .wrapper{
+   top:91.7px;
+  left:49.850%;
+  }
+  .j{
+    top:60.7px;
+  left:48.723%;
+  }
+  .body-logo img {
+    top:202px;
+  left:52.46%;
+  }
+  .container{
+     transform:scale(0.51);
+     top:220px;
+     left:-32.5%;
+  }
+  table{
+    transform:scale(0.67);
+    top:-6px;
+  left:-12.2%;
+  }
+  .return a{
+    font-size:13px;
+    top:210px;
   }
 }
 @media all and (max-width:380px){
@@ -369,9 +484,9 @@ table{
   left:52.92%;
   }
   .container{
-     transform:scale(0.44);
-     top:256px;
-     left:-38.3%;
+     transform:scale(0.47);
+     top:240px;
+     left:-36.3%;
   }
   table{
     transform:scale(0.65);
@@ -397,9 +512,9 @@ table{
   left:53.1%;
   }
   .container{
-     transform:scale(0.42);
+     transform:scale(0.44);
      top:256px;
-     left:-41.3%;
+     left:-39.3%;
   }
   table{
     transform:scale(0.63);
@@ -417,13 +532,17 @@ table{
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
   }
+  .wrapper{
+   top:91.4px;
+  left:49.901%;
+  }
   .body-logo img {
   left:53.5%;
   }
   .container{
-     transform:scale(0.38);
+     transform:scale(0.40);
      top:256px;
-     left:-52.1%;
+     left:-50.1%;
   }
   table{
     transform:scale(0.59);
@@ -448,9 +567,9 @@ table{
   top:91.4px;
   }
   .container{
-     transform:scale(0.35);
+     transform:scale(0.37);
      top:256px;
-     left:-65.9%;
+     left:-63.5%;
   }
   table{
     transform:scale(0.54);
@@ -459,5 +578,6 @@ table{
 }
   .return a{
     font-size:14px;
+    left:71%;
   }
   }
