@@ -1,10 +1,6 @@
-*,
 *::before,
 *::after {
   box-sizing:border-box;/*全体をボーダーボックス指定*/
-}
-html {
-  font-size: calc(100vw / 44);
 }
 
 body{
@@ -44,13 +40,13 @@ header {
 .header-left img{
   width:128px;
   height:auto;
-  margin-top:-20px;
+  margin-top:-15px;
   margin-left:10px;
 
 }
 .header-left p{
   margin-left:20px;
-  margin-top:-3px;
+  margin-top:2px;
   font-size:12px;
   color:#fff;
   opacity:0.8;
@@ -530,7 +526,7 @@ footer{
   }
  .top-message h1{
    margin:0 auto;
-   font-size:0.89rem;
+   font-size:28px;
    font-family:"游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
    color:#fff;
    border-right: 3px solid #e67e22;
@@ -552,8 +548,8 @@ footer{
   height:2150px;
 }
 .contact-container h3{
-  font-size:0.7rem;
-  font-family:"游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;;
+  font-size:20px;
+  font-family:"游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
   color:#000;
   text-shadow:
     #fff 2px 0px 2px, #fff -2px 0px 2px,
@@ -566,21 +562,23 @@ footer{
     #fff 2px -1px 2px, #fff -2px -1px 2px,
     #fff 1px 1px 2px, #fff -1px 1px 2px,
     #fff 1px -1px 2px, #fff -1px -1px 2px;
-  margin-top:15px;
-  margin-bottom:15px;
+  margin-top:20px;
+  margin-bottom:20px;
   text-decoration:underline;
 }
 .contact-container p{
-   color:#ffff00;
+   color:#fff;
    font-weight:400;
+   font-family:"游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
    padding:-10x 0;
-   font-size:0.6rem;
+   font-size:15px;
 }
 .contact-container h4{
-  color:#ffff00;
-  font-size:0.6rem;
+  color:#fff;
+  font-size:15px;
+  font-family:"游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
   font-weight:900;
-  margin-bottom:10px;
+  margin-bottom:40px;
 }
 
 @media all and (max-width:1070px){
@@ -614,6 +612,15 @@ footer{
   }
   .top-message h1{
     font-size:22px;
+  }
+  .contact-container h3{
+    font-size:17px;
+  }
+  .contact-container p{
+    font-size:14px;
+  }
+  .contact-container h4{
+    font-size;14px;
   }
 }
 @media all and (max-width:670px){
@@ -658,6 +665,15 @@ footer{
   .top-message h1{
     font-size:20px;
   }
+  .contact-container h3{
+    font-size:16px;
+  }
+  .contact-container p{
+    font-size:14px;
+  }
+  .contact-container h4{
+    font-size:14px;
+  }
 }
 @media all and (max-width:430px){
   html,	body {
@@ -681,6 +697,15 @@ footer{
    .top-message h1{
      font-size:16px;
    }
+   .contact-container h3{
+     font-size:16px;
+   }
+   .contact-container p{
+     font-size:14px;
+   }
+   .contact-container h4{
+     font-size:14px;
+   }
 }
 @media all and (max-width:380px){
   html,	body {
@@ -689,6 +714,42 @@ footer{
 		-webkit-overflow-scrolling: touch;
 	}
   .top-message h1{
-    font-size:13px;
+    font-size:14px;
   }
+  .contact-container h3{
+    font-size:16px;
+  }
+  .contact-container p{
+    font-size:12px;
+  }
+  .contact-container h4{
+    font-size:12px;
+  }
+}
+@media all and (max-width:330px){
+  html,	body {
+		overflow-x: hidden;
+		overflow-y: scroll;
+		-webkit-overflow-scrolling: touch;
+	}
+.main{
+  padding:0;
+  margin:0;
+ }
+ header{
+   transform: scale(0.8);
+ }
+  .menu-icon{
+   margin-top:35px;
+  	}
+
+    .contact-container h3{
+      font-size:16px;
+    }
+    .contact-container p{
+      font-size:12px;
+    }
+    .contact-container h4{
+      font-size:12px;
+    }
 }
