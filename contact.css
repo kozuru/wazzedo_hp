@@ -1,5 +1,4 @@
-*::before,
-*::after {
+*{
   box-sizing:border-box;/*全体をボーダーボックス指定*/
 }
 
@@ -12,7 +11,7 @@ body{
 
 /*本文のcss*/
 .main{
-  padding-left:270px;
+  padding:0 230px;
   width:100%;
 }
 .contact-form container{
