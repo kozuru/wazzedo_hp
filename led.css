@@ -1475,11 +1475,29 @@ h1 {
    box-shadow: 0 0 17px 9px #fff100;
  }
 }
-.return a{
-  color:white;
+.return{
+  cursor:pointer;
   position:absolute;
   top:100px;
-  left:5%;
+  left:6%;
+}
+.return a {
+  border:1px solid #fff;
+  padding:10px 20px;
+  border-radius:8px;
+  font-size:14px;
+  color:#fff;
+  opacity:0.9;
+  text-align:center;
+}
+.return a:hover{
+   box-shadow:0px 0px 5px 5px #D91338;
+   color:#1090F0;
+   font-weight:800;
+}
+.return .fa{
+  margin-right:5px;
+  font-size:18px;
 }
 /*スマホresponsive*/
 @media (orientation:portrait) and (max-width:1070px) {
@@ -1633,6 +1651,12 @@ h1{
   transform:scale(0.9);
   margin-top:-50px;
 }
+.return a{
+  font-size:12px;
+}
+.return .fa{
+  font-size:13px;
+}
 }
 @media (orientation:portrait) and (max-width:325px){
   html,	body {
@@ -1652,6 +1676,7 @@ h1{
 .body-logo img{
   left:48.06vw;
 }
+
 }
 @media (orientation:portrait) and (max-width:285px){
   html,	body {
@@ -1668,6 +1693,13 @@ h1{
   }
   h1{
     margin-left:-40px;
+  }
+  .return a{
+    font-size:11px;
+      padding:5px 12px;
+  }
+  .return .fa{
+    font-size:12px;
   }
 }
 @media (orientation:landscape) and (max-width:1040px){
