@@ -1608,7 +1608,6 @@ nav ul {
 .animatos figure{
   top:30px;
 }
-
  .business-contents .main-rotation{
     width:650px;
     max-width:100%;
@@ -1638,38 +1637,84 @@ nav ul {
 }
 
 }
-
+@media (orientation:portrait) and (max-width:420px){
+  tml,	body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+  .business-profile{
+    height:1800px;
+  }
+  .example0001 table{
+    margin-left:-140px;
+    transform:scale(0.99);
+  }
+}
 @media (orientation:portrait) and (max-width:330px){
   html,	body {
     overflow-x: hidden;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
   }
-  .footer-right{
-    margin-left:70px;
+  menu-icon{
+     margin-top:5px;
+  	}
+    #slideshow{
+       margin-top:70px;
+  }
+  .example0001 table{
+    margin-left:-240px;
+    transform:scale(0.97);
+  }
+  footer .footer-right{
+    margin-right:-30px;
+  }
+}
+@media (orientation:portrait) and (max-width:290px){
+  html,	body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+  footer .footer-right{
+    margin-right:-30px;
   }
   #slideshow{
     margin-top:70px;
   }
+  .animatos .modal-open img{
+    transform:scale(0.57);
+  }
   .business-profile{
-    height:1620px;
+    height:1740px;
   }
   .business-contents .container h1{
     font-size:18px;
   }
   .example0001 table{
-    margin-left:-240px;
+    margin-left:-280px;
+    transform:scale(0.90);
   }
   .animato{
-    margin-left:-180px;
+    margin-left:-195px;
+  }
+  .animatos .piassa  h3{
+    margin-left: 65px;
+  }
+  .animatos .piassa  p{
+    margin-left: 43px;
   }
   .animatos .modal-open img{
-    transform:scale(0.57);
+    transform:scale(0.53);
   }
   .business-contents .main-rotation{
     margin-left:0px;
   }
-
+  footer .footer-right{
+    transform:scale(0.78);
+    margin-right:-40px;
+  }
 }
 @media (orientation:landscape) and (max-width:830px){
   html,	body {
@@ -1817,7 +1862,7 @@ nav ul {
     margin-top:10px;
     }
   .business-profile{
-    height:2290px;
+    height:2310px;
   }
   .card-container{
     margin-left:0px;
