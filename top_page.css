@@ -119,7 +119,10 @@ cursor: pointer;
 background-size: 100%;
 }
 .cp_fullscreenmenu .menu .menucont {
-font-size:2.9vw;
+font-size:2.8vw;
+font-weight:700;
+letter-spacing:0.20em;
+font-family:"游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
 position: relative;
 top: 39%;
 margin-top: -170px;
@@ -247,6 +250,8 @@ content: '';
 }
 ul .sub-menu li{
   font-size:1.6vw;
+  letter-spacing: -0.08em;
+  font-family:"游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
 }
 
 @media (orientation:portrait) and (max-width:800px){
@@ -256,10 +261,12 @@ ul .sub-menu li{
   }
 .cp_fullscreenmenu .menu .menucont{
   font-size:24px;
+  letter-spacing:0.26em;
   top:50%;
 }
 ul .sub-menu li{
   font-size:16px;
+  letter-spacing: -0.14em;
 }
 
 }
