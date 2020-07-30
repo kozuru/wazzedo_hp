@@ -569,9 +569,12 @@ footer{
    color:#fff;
    font-weight:400;
    font-family:"游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
-   padding:-10x 0;
+   padding:-5x 0;
    font-size:15px;
 }
+.contact-container a{
+   color:#ffff00;
+}	
 .contact-container h4{
   color:#fff;
   font-size:15px;
