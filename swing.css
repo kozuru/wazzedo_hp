@@ -124,6 +124,7 @@ button {
   left: 37%;
   height:53px;
   width:280px;
+
 }
 #output1::before {
   display: block;
@@ -139,6 +140,7 @@ button {
   border: 0.01px solid #ddd;
   color:#fff;
 }
+/
 /*font-variable css*/
 .font-variable{
   margin-left:130px;
@@ -558,6 +560,9 @@ img{
  .font-variable{
     margin-left:36px;
  }
+ .container-fluid,.form-element{
+   transform:scale(1.20);
+ }
 }
 @media all and (max-width:325px){
   html,	body {
@@ -580,7 +585,7 @@ img{
      transform:scale(0.64);
    }
    .container-fluid,.form-element{
-     transform:scale(0.96);
+     transform:scale(1.05);
    }
 }
 @media all and (max-width:295px){
@@ -603,7 +608,7 @@ img{
      transform:scale(0.63);
    }
   .container-fluid,.form-element{
-    transform:scale(0.90);
+    transform:scale(0.95);
   }
   .container-fluid{
     left:-30%;
