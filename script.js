@@ -1,4 +1,4 @@
-/*company*/
+*company*/
 $(document).ready(function () {
   var image = $(".slide img");
 
@@ -32,15 +32,12 @@ let customColor;
 let red;
 let green;
 let blue;
-
 rangeColors.on('change', function(){
     red = sliderRed.val();
     green = sliderGreen.val();
     blue = sliderlue.val();
     customColor = `rgb(${red}, ${green}, ${blue})`
-
     $(this).find('.range-slider-value').html($(this).find('.range-slider-range').val());
-
     currentColor.css({'background-color': `${customColor}`});
 });
 */
@@ -52,7 +49,6 @@ $("#setFontSize").on("input",function () {
 $("#setFontWeight").on("input",function () {
            $('#name').css("font-weight", $(this).val() + "");
    });
-
 $("#setLetterSpacing").on("input",function () {
            $('#name').css("letter-spacing", $(this).val() + "px");
    });
@@ -78,14 +74,14 @@ function slideimage(){
 setInterval("slideimage()",3000);
 
 /*ピアッサーmodal js*/
-$(document).ready(function() { 
+$(document).ready(function() {
  $('.modal-open, .modal-close').on("click", function() {
   $('.modal').fadeToggle();
    return false;
  });
 });
 /*ペンライトmodal js*/
-$(document).ready(function() { 
+$(document).ready(function() {
  $('.modal-open_1, .modal-close_1').on("click", function() {
   $('.modal_1').fadeToggle();
    return false;
@@ -111,4 +107,3 @@ $(function(){
      return false;
   });
 });
-
