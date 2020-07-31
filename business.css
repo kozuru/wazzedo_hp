@@ -518,7 +518,7 @@ footer{
 /*------------------------*/
 .business-top-wrapper{
   height:350px;
-  font-family:serif;
+  font-family:"游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
   position:relative;
    /*position:fixed;*/
   /*background-color:rgba(0,0,0,0.6);*/
@@ -549,86 +549,7 @@ p{
    color: white;
   text-align: center;
 }
-/*.water-ripple {
-  text-align:center;
-  display:block;
-  position:relative;
-  top:0%;
-  left:0%;*/
-  /*margin:-20px 0 0 -20px;*/
-  /*width:10px;
-  line-height:10px;
-}*/
-/*
-.water-ripple h1 {
-  font-size:50px;
-  font-family: 'Norican', cursive;
-  color:white;
-  text-shadow:1px 3px 0 #000,2px 3px 18px rgba(74,163,223,1);
-}
-.ripple,.ripple:before,.ripple:after {
-  display:block;
-  border-radius:2px;
-  width:2px;
-  height:2px;
-  -webkit-animation:rip 6s infinite ease-out;
-  -moz-animation:rip 6s infinite ease-out;
-}
-.ripple {
-  position:absolute;
-  z-index:-1;
-  top:110px;
-  left:50%;
-}
-.ripple:before,.ripple:after {
-  content:'';
-  position:absolute;
-}
-.ripple:before {-webkit-animation-delay:.2s;-moz-animation-delay:.2s;top:5px;left:25px;}
-.ripple:after {-webkit-animation-delay:.8s;-moz-animation-delay:.8s;top:25px;left:0;}
-@-webkit-keyframes rip
-{
-  0%  {
-    box-shadow:0 0 0 0 transparent,
-               0 0 0 0 transparent,
-               0 0 0 0 transparent,
-               0 0 0 0 transparent;
-  }
-  15%  {
-    box-shadow:0 0 0 0 rgba(255,255,255,0.8),
-               0 0 0 0 rgba(255,255,255,0.2),
-               0 0 0 0 rgba(255,255,255,0.8),
-               0 0 0 0 rgba(0,0,0,0.3);
-  }
-  100% {
-    box-shadow:0 0 40px 200px rgba(255,255,255,0.8),
-               0 0 10px 210px transparent,
-               0 0 30px 220px rgba(255,255,255,0.8),
-               0 0 5px 230px transparent;
-  }
-}
-@-ms-keyframes rip
-{
-  0%  {
-    box-shadow:0 0 0 0 transparent,
-               0 0 0 0 transparent,
-               0 0 0 0 transparent,
-               0 0 0 0 transparent;
-  }
-  15%  {
-    box-shadow:0 0 0 0 rgba(255,255,255,0.8),
-               0 0 0 0 rgba(255,255,255,0.2),
-               0 0 0 0 rgba(255,255,255,0.8),
-               0 0 0 0 rgba(0,0,0,0.3);
-  }
-  100% {
-    box-shadow:0 0 40px 200px rgba(255,255,255,0.8),
-               0 0 10px 210px transparent,
-               0 0 30px 220px rgba(255,255,255,0.8),
-               0 0 5px 230px transparent;
-  }
-}
-*/
+
 /*==================-----========*/
 /*業務内容メッセージカードのcss*/
 /*-------------------------------*/
@@ -803,29 +724,40 @@ ntainer .card .face.face1 .content{
 }
 
 /*ワッゼドビジネスタイトルcss*/
-.stroke h1{
-  font-size:20px;
+.wazzedo-logo{
+  height:40px;
+  width:auto;
+  margin-top:25vh;
 }
-.stroke p{
-  font-size:16px;
-  font-weight:200;
+.wazzedo-logo p{
+  margin-left:0.7vw;
+  font-family:"游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
 }
-.stroke {
-  font-family: "Passion One";
-  /*font-weight: 900;
-  font-size: 20px;*/
-  padding-top:10px;
-  margin-bottom:0px;
-  text-transform: uppercase;
-  color:rgba(255, 255, 255, 0);
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: rgba(255, 255, 255, 1);
-  transition: 0.5s all;
+svg {
+	font-family: 'Russo One', sans-serif;
+	position: absolute;
+	top:25%;
+	left:1%;
+	width: 100%; height: 100%;
 }
-.stroke:hover {
-  color: rgba(255, 255, 255, 1);
-  -webkit-text-fill-color: rgba(255, 255, 255, 1);
-  -webkit-text-stroke-color: rgba(255, 255, 255, 0);
+svg text {
+	text-transform: uppercase;
+	animation: stroke 5s infinite alternate;
+	stroke-width: 2;
+	stroke: #365fa0;
+	font-size: 45px;
+}
+@keyframes stroke {
+	0%   {
+		fill: rgba(222,238,220,0); stroke: rgba(54,95,160,1);
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+	}
+	70%  {fill: rgba(222,238,220,0); stroke: rgba(54,95,160,1); }
+	80%  {fill: rgba(222,238,220,0); stroke: rgba(54,95,160,1); stroke-width: 3; }
+	100% {
+		fill: rgba(222,238,220,1); stroke: rgba(54,95,160,0);
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+	}
 }
 /*---------------------------------*/
 /*実例紹介紹介thumbnail sliderのcss*/
@@ -850,7 +782,7 @@ ntainer .card .face.face1 .content{
   font-size:16px;
   text-align:left;
   color:#fff;
-  font-family:serif;
+  font-family:"游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
   line-height:1.8;
   letter-spacing:0.12em;
   margin-bottom:10px;
@@ -1346,7 +1278,7 @@ width: 700px;
   margin:0;
 }
 .rotate{
-  left:106%;
+  left:125%;
 }
 .header-left{
   transform:scale(0.87);
@@ -1369,32 +1301,35 @@ width: 700px;
    left:50%;
    transform:translateX(-50%);
    -webkit-transform:translateX(-50%);
-
 }
 .business-profile{
-  height:1090px;
+  height:730px;
 }
-.stroke h1{
-  font-size:14px;
+.wazzedo-logo{
+  margin-top:15vh;
 }
-.stroke p{
-  font-size:10px;
+.wazzedo-logo p{
+  margin-left:0.7vw;
+}
+svg {
+	top:-15%;
+	left:1%;
 }
 .card-container {
  transform:scale(0.9);
 }
 .business-contents{
   transform:scale(0.8);
-  height:2300px;
+  height:2350px;
 }
 nav   ul {
-  margin-left:50px;
+  margin-left:200px;
 }
 .example0001 table{
-  margin-left:-100px;
+  margin-left:-10px;
 }
 .animato{
-  margin-left:-150px;
+  margin-left:-70px;
 }
 .main-rotation{
   margin-left:-50px;
@@ -1404,8 +1339,27 @@ nav   ul {
   #slideshow{
     margin-top:50px;
   }
-  .stroke{
-    margin-top:60px;
+  .rotate{
+    left:120%;
+  }
+  .business-profile{
+    height:870px;
+  }
+  .wazzedo-logo{
+    margin-top:25vh;
+  }
+  .wazzedo-logo p{
+    margin-left:0.7vw;
+  }
+  svg {
+  	top:3.5%;
+  	left:1%;
+  }
+  nav   ul {
+    margin-left:110px;
+  }
+  .example0001 table{
+    margin-left:-45px;
   }
   .business-contents{
     height:2450px;
@@ -1423,8 +1377,18 @@ nav   ul {
   .business-profile{
     height:1290px;
   }
+  .wazzedo-logo{
+    margin-top:23vh;
+  }
+  .wazzedo-logo p{
+    margin-left:0.7vw;
+  }
+  svg {
+  	top:13%;
+  	left:1%;
+  }
   nav   ul {
-    margin-left:6px;
+    margin-left:18px;
   }
   .business-contents{
     height:2790px;
@@ -1453,7 +1417,6 @@ nav   ul {
 .main{
   padding:0;
   margin:0;
-  position:relative;
  }
 .header-left{
   transform:scale(0.83);
@@ -1461,7 +1424,6 @@ nav   ul {
 }
 .rotate{
    display:none;
-   left:56%;
 }
 .menu-icon{
    margin-top:45px;
@@ -1478,7 +1440,7 @@ nav   ul {
   }
   footer .footer-right small{
     display:block;
-    margin-top:-45px;
+    margin-top:-55px;
     white-space:nowrap;
   }
 .business-top-wrapper{
@@ -1498,15 +1460,22 @@ nav   ul {
 .business-profile{
   height:1670px;
 }
-.stroke h1{
-  font-size:14px;
+.wazzedo-logo{
+  margin-top:29vh;
 }
-.stroke p{
-  font-size:10px;
-  margin-bottom:-140px;
+.wazzedo-logo p{
+  margin-left:0.7vw;
+}
+svg {
+  top:2.5%;
+  left:1%;
+  width: 100%; height: 100%;
+}
+svg text{
+  font-size:90px;
 }
 .card-container{
-  /*position:relative;*/
+  margin-top:-80px;
 }
 .card{
   position: absolute;
@@ -1518,7 +1487,7 @@ nav   ul {
 .business-contents{
   margin:0;
   padding:0;
-  height:2200px;
+  height:2150px;
 }
 .container{
   background-image:url("https://i.imgur.com/mvfMHL4.jpg");
@@ -1529,16 +1498,12 @@ nav{
   margin-left:-70px;
 }
 nav ul {
-  /*margin-left:-80px;*/
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-left:30px;
   transform:scale(0.6);
 }
 .slider img{
   transform:scale(0.51);
 }
-
 .business-contents .container h1{
   white-space:nowrap;
   font-size:20px;
@@ -1569,11 +1534,11 @@ nav ul {
 }
 .example0001 table{
  /*margin-left:-270px;*/
-  margin-left:-180px
+  margin-left:-100px
 }
 .animatos{
    margin-top:60px;
-   margin-left:30px;
+   margin-left:0px;
    width:650px;
    max-width:100%;
 }
@@ -1644,11 +1609,68 @@ nav ul {
     -webkit-overflow-scrolling: touch;
   }
   .business-profile{
-    height:1800px;
+    height:1700px;
+  }
+  .wazzedo-logo{
+    margin-top:29vh;
+  }
+  .wazzedo-logo p{
+    margin-left:0.7vw;
+  }
+  svg {
+    top:-2%;
+  }
+  nav ul {
+    margin-left:5px;
   }
   .example0001 table{
-    margin-left:-140px;
-    transform:scale(0.99);
+    margin-left:-132px
+  }
+  .animatos{
+    margin-left:-25px;
+  }
+}
+@media (orientation:portrait) and (max-width:380px){
+  .example0001 table{
+    margin-left:-175px;
+  }
+  .wazzedo-logo{
+    margin-top:34vh;
+  }
+  .wazzedo-logo p{
+    margin-left:0.7vw;
+  }
+  svg {
+    top:25px;
+  }
+  svg text{
+    font-size:107px;
+  }
+  nav ul {
+    margin-left:-5px;
+  }
+  .animatos{
+    margin-left:-45px;
+  }
+}
+@media (orientation:portrait) and (max-width:365px){
+  .example0001 table{
+    margin-left:-200px;
+  }
+  .wazzedo-logo{
+    margin-top:53%;
+  }
+  svg {
+    top:3%;
+  }
+  svg text{
+    font-size:110px;
+  }
+  nav ul {
+    margin-left:-10px;
+  }
+  .animatos{
+    margin-left:-55px;
   }
 }
 @media (orientation:portrait) and (max-width:330px){
@@ -1663,9 +1685,41 @@ nav ul {
     #slideshow{
        margin-top:70px;
   }
+  .wazzedo-logo{
+    margin-top:40vh;
+  }
+  .wazzedo-logo p{
+    margin-left:0.7vw;
+    font-size:11px;
+  }
+  svg {
+    top:16%;
+    left:1%;
+  }
+  svg text{
+    font-size:120px;
+  }
   .example0001 table{
     margin-left:-240px;
     transform:scale(0.97);
+  }
+  .business-contents{
+    height:2200px;
+  }
+  nav ul {
+    margin-left:-32px;
+  }
+  .animatos{
+    margin-left:-75px;
+  }
+  .animatos .piassa  h3{
+    margin-left: 170px;
+  }
+  .animatos .piassa  p{
+    margin-left: 148px;
+  }
+  .animatos .modal-open img{
+    transform:scale(0.59);
   }
   footer .footer-right{
     margin-right:-30px;
@@ -1683,8 +1737,21 @@ nav ul {
   #slideshow{
     margin-top:70px;
   }
-  .animatos .modal-open img{
-    transform:scale(0.57);
+  .business-profile{
+    height:1650px;
+  }
+  .wazzedo-logo{
+    margin-top:38vh;
+  }
+  .wazzedo-logo p{
+    margin-left:0.7vw;
+    font-size:11px;
+  }
+  svg {
+    top:9%;
+  }
+  svg text{
+    font-size:135px;
   }
   .business-profile{
     height:1740px;
@@ -1692,18 +1759,22 @@ nav ul {
   .business-contents .container h1{
     font-size:18px;
   }
+  nav ul {
+    margin-left:-45px;
+    transform:scale(0.56);
+  }
   .example0001 table{
     margin-left:-280px;
     transform:scale(0.90);
   }
   .animato{
-    margin-left:-195px;
+    margin-left:-95px;
   }
   .animatos .piassa  h3{
-    margin-left: 65px;
+    margin-left: 170px;
   }
   .animatos .piassa  p{
-    margin-left: 43px;
+    margin-left: 148px;
   }
   .animatos .modal-open img{
     transform:scale(0.53);
@@ -1712,8 +1783,8 @@ nav ul {
     margin-left:0px;
   }
   footer .footer-right{
-    transform:scale(0.78);
-    margin-right:-40px;
+    transform:scale(0.77);
+    margin-right:-50px;
   }
 }
 @media (orientation:landscape) and (max-width:830px){
@@ -1737,21 +1808,23 @@ nav ul {
     margin-bottom:-20px;
   }
   .business-profile{
-    height:2150px;
+    height:2100px;
   }
   .card-container{
     margin-left:70px;
   }
-  .stroke{
-    margin-top:10px;
-    margin-bottom:-40px;
+  .wazzedo-logo{
+    margin-top:57vh;
   }
-  .stroke h1{
-    font-size:14px;
+  .wazzedo-logo p{
+    margin-left:2.1vw;
   }
-  .stroke p{
-    font-size:12px;
-    display:inline-block;
+  svg {
+    top:85.5%;
+    left:1%;
+  }
+  svg text{
+    font-size:80px;
   }
   .business-contents{
     height:2300px;
@@ -1829,7 +1902,7 @@ nav ul {
     margin-left:210px;
   }
   .main-rotation{
-    margin-left:-90px;
+    margin-left:-50px;
   }
   .business-contents .main-rotation h6{
     font-size:14px;
@@ -1848,13 +1921,12 @@ nav ul {
   }
 }
 
-@media (orientation:landscape) and (max-width:700px){
+@media (orientation:landscape) and (max-width:705px){
   html,	body {
 		overflow-x: hidden;
 		overflow-y: scroll;
 		-webkit-overflow-scrolling: touch;
 	}
-
   .menu-icon{
      margin-top:90px;
   	}
@@ -1864,23 +1936,27 @@ nav ul {
   .business-profile{
     height:2310px;
   }
+  .wazzedo-logo{
+    margin-top:59vh;
+  }
+  .wazzedo-logo p{
+    margin-left:2.0vw;
+    white-space:nowrap;
+  }
+  svg {
+    top:91%;
+    left:1.5%;
+  }
+  svg text{
+    font-size:90px;
+  }
   .card-container{
     margin-left:0px;
   }
   .card{
     margin-bottom:60px;
   }
-  .stroke{
-    margin-top:10px;
-    margin-bottom:-40px;
-  }
-  .stroke h1{
-    font-size:14px;
-  }
-  .stroke p{
-    font-size:12px;
-    display:inline-block;
-  }
+
   .business-contents{
     height:2350px;
     width:700px;
@@ -1981,6 +2057,17 @@ nav ul {
 		overflow-y: scroll;
 		-webkit-overflow-scrolling: touch;
 	}
+  .wazzedo-logo{
+    margin-top:59vh;
+  }
+  .wazzedo-logo p{
+    margin-left:2.0vw;
+    white-space:nowrap;
+  }
+  svg {
+    top:94%;
+    left:1.5%;
+  }
   .example0001 table{
     margin-left:-330px;
   }
