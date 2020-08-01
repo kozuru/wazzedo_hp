@@ -739,6 +739,9 @@ ntainer .card .face.face1 .content{
   font-family:"游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
   text-align:left;
 }
+.wazzedo-logo p,svg{
+  margin-top:50px
+}	
 svg {
 	font-family: 'Russo One', sans-serif;
 	position: absolute;
