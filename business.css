@@ -731,10 +731,10 @@ ntainer .card .face.face1 .content{
 .wazzedo-logo p{
   position:absolute;
   top:78%;
-  left:42%;
+  left:40%;
   font-size:16px;
   letter-spacing:0.09em;
-  line-height:1.9;
+  line-height:2.2;
   color:#fff;
   font-family:"游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
   text-align:left;
@@ -745,7 +745,7 @@ ntainer .card .face.face1 .content{
 svg {
 	font-family: 'Russo One', sans-serif;
 	position: absolute;
-	top:34%;
+	top:32%;
 	left:0%;
 	width: 100%; height: 100%;
 }
