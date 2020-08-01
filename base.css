@@ -198,10 +198,11 @@ header .menu-btn:hover {
 	position: relative;
 }
 .header-right ul ul li a{
-  font-size:10px;
+  font-size:11px;
+  font-weight:800;
   white-space:nowrap;
   padding-left:-5px;
-  color:#000;
+  color:#ddd;
 }
 /*----------------*/
 /* hamburger-menu */
@@ -1195,9 +1196,27 @@ footer .footer-right small{
   color:#fff;
   font-size:16px;
 }
-.company-profile{
-
 }
+@media (orientation:portrait) and (max-width:480px){
+  html,
+  body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+  } /*画面横揺れ防止*/
+  .company-profile{
+    width:100%;
+  }
+  .company-profile .news{
+    margin-left:5px;
+    margin-right:5px;
+  }
+  .company-profile h2{
+    margin-left:-20px;
+  }
+  #info{
+    margin-left:55px;
+  }
 }
 @media (orientation:portrait) and (max-width:430px){
   html,
@@ -1206,18 +1225,57 @@ footer .footer-right small{
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
   } /*画面横揺れ防止*/
-
   #all #page-flip
   {
     top:25px;
     left:18.0%;
   }
+  .company-profile{
+    width:100%;
+  }
   .company-profile .news{
-    margin-left:40px;
+    margin-left:5px;
+    margin-right:5px;
+  }
+  .company-profile h2{
+    margin-left:-20px;
   }
   #info{
     margin-left:40px;
   }
+}
+@media (orientation:portrait) and (max-width:380px){
+  html,
+  body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+  } /*画面横揺れ防止*/
+  .company-profile{
+    width:100%;
+  }
+  .company-profile .news{
+    margin-left:5px;
+    margin-right:5px;
+  }
+  .company-profile h2{
+    margin-left:-20px;
+  }
+  #info{
+    margin-left:23px;
+  }
+}
+@media (orientation:portrait) and (max-width:365px){
+  html,
+  body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+  } /*画面横揺れ防止*/
+  #info{
+    margin-left:15px;
+  }
+
 }
 @media (orientation:portrait) and (max-width:330px){
   html,
@@ -1238,10 +1296,11 @@ footer .footer-right small{
     left:13.2%;
   }
   .company-profile .news{
-    margin-left:20px;
+    margin-left:5px;
+    margin-right:5px;
   }
   #info{
-    margin-left:20px;
+    margin-left:-10px;
   }
   footer{
     float:none;
@@ -1250,8 +1309,47 @@ footer .footer-right small{
     display:block;
     transform:scale(0.80);
     margin-top:-10px;
-
+    margin-right:-20px;
     margin-bottom:20px;
+  }
+}
+@media (orientation:portrait) and (max-width:285px){
+  html,
+  body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+  } /*画面横揺れ防止*/
+  .top-wrapper{
+    transform:scale(0.38);
+  }
+  .message-wrapper .heading{
+    transform:scale(0.56);
+  }
+  .message-content .content{
+    transform:scale(0.74);
+    margin-left:-20px;
+    margin-top:-100px;
+  }
+
+  .company-wrapper .company-profile{
+    transform: scale(0.8);
+  }
+  .message-wrapper{
+    height:1180px;
+  }
+  .company-wrapper{
+    height:920px;
+  }
+  .company-wrapper #info{
+    transform: scale(0.8);
+    margin-left:-50px;
+  }
+  footer{
+    transform:scale(0.85);
+  }
+  footer .footer-right{
+    margin-right:-50px;
   }
 }
 @media (orientation:landscape) and (max-width:830px){
@@ -1495,6 +1593,73 @@ footer .footer-right small{
      margin-top:10px;
    }
 
+}
+@media (orientation:landscape) and (max-width:610px){
+  html,
+	body {
+		overflow-x: hidden;
+		overflow-y: scroll;
+		-webkit-overflow-scrolling: touch;
+	}
+  .header-left{
+    trasform:scale(0.8);
+  }
+  .menu-icon{
+    margin-top:110px;
+  }
+  .top-wrapper{
+   transform:scale(0.42);
+  }
+  #all #page-flip
+  {
+    top:25px;
+    left:26.5%;
+  }
+  .message-wrapper{
+
+  }
+  .message-wrapper .heading{
+    flaot:left;
+    transform: scale(0.70);
+    width:130px;
+    margin-left:30px;
+    margin-right:-20px;
+  }
+  .message-content{
+    flaot:left;
+    transform: scale(0.88);
+    width:400px;
+  }
+   company-wrapper{
+    transform: scale(0.50);
+   }
+   .company-profile{
+     flaot:left;
+     width:185px;
+   }
+   .company-profile .news{
+     font-size:10px;
+   }
+   #info{
+     flaot:left;
+     width:370px;
+     margin-left:-10px;
+   }
+   #info table{
+     margin-top:10px;
+     font-size:13px;
+   }
+   footer .footer-right{
+     transform:scale(0.85);
+     margin-top:-10px;
+     margin-left:10px;
+     margin-bottom:20px;
+   }
+   footer .footer-right small{
+     display:block;
+     margin-top:-45px;
+     white-space:nowrap;
+   }
 }
 @media (orientation:landscape) and (max-width:570px){
   html,
