@@ -27,13 +27,13 @@ header {
 .header-left img{
   width:128px;
   height:auto;
-  margin-top:16px;
+  margin-top:20px;
   margin-left:10px;
 
 }
 .header-left p{
   margin-left:20px;
-  margin-top:22px;
+  margin-top:26px;
   font-size:12px;
   color:#fff;
   opacity:0.8;
@@ -284,6 +284,9 @@ ul .sub-menu li{
 }
 
 @media (orientation:portrait) and (max-width:800px){
+  header{
+    transform:scale(0.7);
+  }  
   #fly-in{
     transform:scale(0.55);
     text-align:center;
@@ -297,10 +300,12 @@ ul .sub-menu li{
   font-size:16px;
   letter-spacing: -0.14em;
 }
-
 }
 
 @media (orientation:portrait) and (max-width:670px){
+   header{
+    transform:scale(0.6);
+  }  
   #fly-in{
     transform:scale(0.5);
     text-align:center;
@@ -349,6 +354,9 @@ ul .sub-menu li{
 
 }
 @media (orientation:landscape) and (max-width:660px){
+   header{
+    transform:scale(0.7);
+  }  
   #fly-in{
     transform:scale(0.6);
     text-align:center;
