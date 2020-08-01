@@ -12,7 +12,9 @@ color: inherit;
 header {
   width:100%;
   height:65px;
- 
+  position:fixed;
+  top:0;
+  z-index:10;
 }
 .header-left {
   float:left;
@@ -21,11 +23,13 @@ header {
   float:left;
   list-style:none;
 }
+
 .header-left img{
   width:128px;
   height:auto;
   margin-top:6px;
   margin-left:10px;
+
 }
 .header-left p{
   margin-left:20px;
@@ -46,7 +50,9 @@ display: none;
   width: 100%;
   height: 100%;
   filter: grayscale(80%);
+
 }
+
 .headerRight .dotImg {
   width: 100%;
   height: 100vh;
