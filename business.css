@@ -1693,7 +1693,7 @@ nav ul {
     margin-left:-5px;
   }
   .animatos{
-    margin-left:-45px;
+    margin-left:-33px;
   }
 }
 @media (orientation:portrait) and (max-width:365px){
@@ -1723,7 +1723,13 @@ nav ul {
     margin-left:-10px;
   }
   .animatos{
-    margin-left:-55px;
+    margin-left:-41px;
+  }
+  .animatos .piassa  h3{
+    margin-left: 170px;
+  }
+  .animatos .piassa  p{
+    margin-left: 148px;
   }
 }
 @media (orientation:portrait) and (max-width:330px){
