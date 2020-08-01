@@ -11,12 +11,12 @@ body{
 
 /*本文のcss*/
 .main{
-  padding:0 230px;
+  padding-left:240px;
+  padding-right:190px;
   width:100%;
+  text-algin:center;
 }
 .contact-form container{
-  max-width:1200px;
-  width:100%;
   margin:0px auto;
 }
 /*headerのcss*/
@@ -545,7 +545,7 @@ footer{
 /*本文*/
 .contact-container{
   margin-top:80px;
-  height:2150px;
+  height:2360px;
 }
 .contact-container h3{
   font-size:20px;
@@ -575,7 +575,7 @@ footer{
 }
 .contact-container a{
    color:#ffff00;
-}	
+}
 .contact-container h4{
   color:#fff;
   font-size:15px;
