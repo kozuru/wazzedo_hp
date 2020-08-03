@@ -1655,6 +1655,12 @@ nav ul {
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
   }
+  #slideshow h1{
+    fn-size:20px;
+  }
+  #slideshow p{
+    fn-size:13px;
+  }
   .business-profile{
     height:1810px;
   }
