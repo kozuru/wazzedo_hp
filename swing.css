@@ -49,7 +49,7 @@ button {
   padding: 3px 2px;
 }
 .button img{
-  width:2.0vw;
+  width:2.5vw;
   height:auto;
 }
 .button a{
@@ -467,7 +467,7 @@ img{
     left:81%;
   }
   .button img{
-    width:3.5vw;
+    width:3.8vw;
     height:auto;
   }
  .font-container,.time{
@@ -480,7 +480,7 @@ img{
 }
  .font-variable{
   margin-left:65px;
-  margin-top:300px;
+  margin-top:310px;
 }
 .font-varible input{
   margin-bottom:2px;
@@ -515,15 +515,18 @@ img{
 
 .form-element{
    position:absolute;
-  top:700px;
+  top:645px;
   left:78%;
-  transform:scale(1.12);
+  transform:scale(1.20);
+}
+.form-element input[type='button']{
+  margin-top:15px;
 }
 .container-fluid{
   position:absolute;
-  top:735px;
+  top:765px;
   left:-15%;
-  transform:scale(1.12);
+  transform:scale(1.16);
 }
 .container-fluid h5
 {
@@ -550,6 +553,10 @@ img{
     top:2%;
     left:5%;
   }
+  .button img{
+    width:4.1vw;
+    height:auto;
+  }
   .output1 p{
     margin-left:-70px;
   }
@@ -561,7 +568,18 @@ img{
     margin-left:36px;
  }
  .container-fluid,.form-element{
-   transform:scale(1.20);
+   transform:scale(1.30);
+ }
+ .form-element{
+   top:635px;
+   left:78%;
+ }
+ .form-element input[type='button']{
+   margin-top:15px;
+ }
+ .ontainer-fluid{
+   top:830px;
+   left:-10%;
  }
 }
 @media all and (max-width:325px){
@@ -573,6 +591,10 @@ img{
   button{
     top:2.6%;
     left:5%;
+  }
+  .button img{
+    width:4.3vw;
+    height:auto;
   }
   #output1{
     top:-8px;
