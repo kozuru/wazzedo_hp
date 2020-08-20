@@ -729,7 +729,7 @@ ntainer .card .face.face1 .content{
   width:100%;
 }
 .wazzedo-logo p{
-  margin-top:178px;
+  margin-top:174px;
   position:absolute;
   top:40%;
   left:30%;
@@ -742,7 +742,7 @@ ntainer .card .face.face1 .content{
 }
 svg {
 	font-family: 'Russo One', sans-serif;
-  margin-top:154px;
+  margin-top:150px;
 	position: absolute;
 	top:20%;
 	left:0%;
@@ -1655,12 +1655,6 @@ nav ul {
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
   }
-  #slideshow h1{
-    fn-size:20px;
-  }
-  #slideshow p{
-    fn-size:13px;
-  }
   .business-profile{
     height:1810px;
   }
@@ -1702,12 +1696,12 @@ nav ul {
     height:210px;
   }
   .wazzedo-logo p{
-    top:22%;
+    top:20%;
     left:19%;
     font-size:13px;
   }
   svg {
-    top:-8%;
+    top:-10%;
     left:0%;
   }
   svg text {
