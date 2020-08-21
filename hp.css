@@ -10,6 +10,7 @@ body{
 }
 a{
   text-decoration:none;
+   white-space:pre-line;
 }
 .main{
   padding:30px 190px;
@@ -74,8 +75,14 @@ span{
   }
 }
 @media all and (max-width:450px){
+  html,
+  body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
   .main{
-     padding:40px 30px;
+     padding:40px 20px;
     width:100%;
   }
   h1{
